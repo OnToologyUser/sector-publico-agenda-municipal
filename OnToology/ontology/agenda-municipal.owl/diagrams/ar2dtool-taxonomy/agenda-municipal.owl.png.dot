@@ -1,0 +1,23 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##Evento" "esequip:Equipamiento" "270c3d65:16a97e95eec:-7fcc" "dbo:GovernmentalAdministrativeRegion" "foaf:Agent" "270c3d65:16a97e95eec:-7fc2" "270c3d65:16a97e95eec:-7fe2" "dbo:District" "270c3d65:16a97e95eec:-7fc7" "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##RolIntegranteEvento" "270c3d65:16a97e95eec:-7fd3" "http://schema.org/Event" "foaf:Person" "esadm:Distrito" "dbo:Municipality" "foaf:Group" "skos:Concept" "esadm:Municipio" "270c3d65:16a97e95eec:-7fd8" "http://www.w3.org/ns/org#Organization" "http://www.w3.org/ns/org#Role" "270c3d65:16a97e95eec:-7fdd" "http://schema.org/Place" ; /*classes style*/
+	"foaf:Group" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/ns/org#Organization" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/ns/org#Role" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
+	"foaf:Person" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##Evento" -> "270c3d65:16a97e95eec:-7fd8" [ label = "rdfs:subClassOf" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##Evento" -> "270c3d65:16a97e95eec:-7fd3" [ label = "rdfs:subClassOf" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##Evento" -> "270c3d65:16a97e95eec:-7fdd" [ label = "rdfs:subClassOf" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##Evento" -> "270c3d65:16a97e95eec:-7fe2" [ label = "rdfs:subClassOf" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##Evento" -> "http://schema.org/Event" [ label = "rdfs:subClassOf" ];
+	"esadm:Distrito" -> "dbo:District" [ label = "rdfs:subClassOf" ];
+	"dbo:Municipality" -> "dbo:GovernmentalAdministrativeRegion" [ label = "rdfs:subClassOf" ];
+	"dbo:District" -> "dbo:GovernmentalAdministrativeRegion" [ label = "rdfs:subClassOf" ];
+	"esequip:Equipamiento" -> "http://schema.org/Place" [ label = "rdfs:subClassOf" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##RolIntegranteEvento" -> "270c3d65:16a97e95eec:-7fc2" [ label = "rdfs:subClassOf" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##RolIntegranteEvento" -> "270c3d65:16a97e95eec:-7fc7" [ label = "rdfs:subClassOf" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##RolIntegranteEvento" -> "270c3d65:16a97e95eec:-7fcc" [ label = "rdfs:subClassOf" ];
+	"esadm:Municipio" -> "dbo:Municipality" [ label = "rdfs:subClassOf" ];
+
+}
