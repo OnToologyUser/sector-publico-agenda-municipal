@@ -593,7 +593,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
 ###  http://schema.org/Place
 <http://schema.org/Place> rdf:type owl:Class ;
                           rdfs:comment "Entities that have a somewhat fixed, physical extension." ;
-                          rdfs:isDefinedBy <https://schema.org/Event> ;
+                          rdfs:isDefinedBy <https://schema.org/Place> ;
                           rdfs:label "Place" .
 
 
@@ -614,7 +614,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
 :Documentacion rdf:type owl:Class ;
                rdfs:comment "Reference to the documentation associated with the event."@en ,
                             "Referencia a la documentación asociada al evento."@es ;
-               rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipall> ;
+               rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
                rdfs:label "Documentación"@es ,
                           "Documentation"@en .
 
@@ -826,6 +826,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
                                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
                                   owl:disjointWith <http://xmlns.com/foaf/0.1/Person> ;
                                   rdfs:comment "A class of Agents."@en ;
+                                  rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
                                   rdfs:label "Group"@en .
 
 
@@ -833,7 +834,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
 <http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
                                    rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
                                    rdfs:comment "A person."@en ;
-                                   rdfs:isDefinedBy "http://xmlns.com/foaf/0.1/" ;
+                                   rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
                                    rdfs:label "Person"@en .
 
 

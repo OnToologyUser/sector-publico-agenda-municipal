@@ -553,7 +553,7 @@
     "@value" : "Entities that have a somewhat fixed, physical extension."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://schema.org/Event"
+    "@id" : "https://schema.org/Place"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Place"
@@ -838,7 +838,7 @@
     "@value" : "Referencia a la documentación asociada al evento."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipall"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1729,6 +1729,9 @@
     "@language" : "en",
     "@value" : "A class of Agents."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Group"
@@ -1747,7 +1750,7 @@
     "@value" : "A person."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://xmlns.com/foaf/0.1/"
+    "@id" : "http://xmlns.com/foaf/0.1/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
