@@ -203,13 +203,13 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento">
+      <node id="nid_base:Evento">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="750.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:Evento</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
@@ -227,7 +227,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf7" source="nid_http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" target="nid_http://schema.org/Event">
+    <edge id="eid_rdfs:subClassOf7" source="nid_base:Evento" target="nid_http://schema.org/Event">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -238,19 +238,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_600c35e0:16ab1152686:-7fd3">
+      <node id="nid_162a934de57bfd790fcca892ad4d83f4">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">600c35e0:16ab1152686:-7fd3</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">162a934de57bfd790fcca892ad4d83f4</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf8" source="nid_http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" target="nid_600c35e0:16ab1152686:-7fd3">
+    <edge id="eid_rdfs:subClassOf8" source="nid_base:Evento" target="nid_162a934de57bfd790fcca892ad4d83f4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -261,19 +261,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_600c35e0:16ab1152686:-7fd8">
+      <node id="nid_26c566e801bffb6ad5a5921c0cf81096">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">600c35e0:16ab1152686:-7fd8</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">26c566e801bffb6ad5a5921c0cf81096</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf9" source="nid_http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" target="nid_600c35e0:16ab1152686:-7fd8">
+    <edge id="eid_rdfs:subClassOf9" source="nid_base:Evento" target="nid_26c566e801bffb6ad5a5921c0cf81096">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -284,19 +284,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_600c35e0:16ab1152686:-7fdd">
+      <node id="nid_0a78c9341391645af6aebd6894d93474">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">600c35e0:16ab1152686:-7fdd</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">0a78c9341391645af6aebd6894d93474</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf10" source="nid_http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" target="nid_600c35e0:16ab1152686:-7fdd">
+    <edge id="eid_rdfs:subClassOf10" source="nid_base:Evento" target="nid_0a78c9341391645af6aebd6894d93474">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -307,19 +307,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_600c35e0:16ab1152686:-7fe2">
+      <node id="nid_b974092bff3781867d0224f40da4071d">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">600c35e0:16ab1152686:-7fe2</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">b974092bff3781867d0224f40da4071d</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf11" source="nid_http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" target="nid_600c35e0:16ab1152686:-7fe2">
+    <edge id="eid_rdfs:subClassOf11" source="nid_base:Evento" target="nid_b974092bff3781867d0224f40da4071d">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -365,31 +365,31 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento">
+      <node id="nid_base:RolIntegranteEvento">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="880.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="240.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:RolIntegranteEvento</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_600c35e0:16ab1152686:-7fc2">
+      <node id="nid_40a1096c1abd292a77729c04044ed951">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">600c35e0:16ab1152686:-7fc2</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">40a1096c1abd292a77729c04044ed951</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf13" source="nid_http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento" target="nid_600c35e0:16ab1152686:-7fc2">
+    <edge id="eid_rdfs:subClassOf13" source="nid_base:RolIntegranteEvento" target="nid_40a1096c1abd292a77729c04044ed951">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -400,19 +400,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_600c35e0:16ab1152686:-7fc7">
+      <node id="nid_d3b296f242c8f42c30e00d768d98c1c1">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">600c35e0:16ab1152686:-7fc7</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">d3b296f242c8f42c30e00d768d98c1c1</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf14" source="nid_http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento" target="nid_600c35e0:16ab1152686:-7fc7">
+    <edge id="eid_rdfs:subClassOf14" source="nid_base:RolIntegranteEvento" target="nid_d3b296f242c8f42c30e00d768d98c1c1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -423,19 +423,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_600c35e0:16ab1152686:-7fcc">
+      <node id="nid_24bd220c922d7633c2abc0b45f04e096">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">600c35e0:16ab1152686:-7fcc</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">24bd220c922d7633c2abc0b45f04e096</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf15" source="nid_http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento" target="nid_600c35e0:16ab1152686:-7fcc">
+    <edge id="eid_rdfs:subClassOf15" source="nid_base:RolIntegranteEvento" target="nid_24bd220c922d7633c2abc0b45f04e096">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

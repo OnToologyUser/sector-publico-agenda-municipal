@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "esequip:Equipamiento" "600c35e0:16ab1152686:-7fcc" "dbo:GovernmentalAdministrativeRegion" "foaf:Agent" "600c35e0:16ab1152686:-7fe2" "600c35e0:16ab1152686:-7fc7" "600c35e0:16ab1152686:-7fd8" "dbo:District" "600c35e0:16ab1152686:-7fdd" "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" "http://schema.org/Event" "foaf:Person" "esadm:Distrito" "600c35e0:16ab1152686:-7fc2" "600c35e0:16ab1152686:-7fd3" "dbo:Municipality" "foaf:Group" "skos:Concept" "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento" "esadm:Municipio" "http://www.w3.org/ns/org#Organization" "http://www.w3.org/ns/org#Role" "http://schema.org/Place" ; /*classes style*/
+node [shape = rectangle, color="black"]; "162a934de57bfd790fcca892ad4d83f4" "0a78c9341391645af6aebd6894d93474" "esequip:Equipamiento" "dbo:GovernmentalAdministrativeRegion" "foaf:Agent" "b974092bff3781867d0224f40da4071d" "dbo:District" "24bd220c922d7633c2abc0b45f04e096" "base:Evento" "http://schema.org/Event" "26c566e801bffb6ad5a5921c0cf81096" "foaf:Person" "d3b296f242c8f42c30e00d768d98c1c1" "esadm:Distrito" "dbo:Municipality" "40a1096c1abd292a77729c04044ed951" "foaf:Group" "skos:Concept" "base:RolIntegranteEvento" "esadm:Municipio" "http://www.w3.org/ns/org#Organization" "http://www.w3.org/ns/org#Role" "http://schema.org/Place" ; /*classes style*/
 	"foaf:Group" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
 	"http://www.w3.org/ns/org#Organization" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
 	"http://www.w3.org/ns/org#Role" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
@@ -9,15 +9,15 @@ node [shape = rectangle, color="black"]; "esequip:Equipamiento" "600c35e0:16ab11
 	"esadm:Distrito" -> "dbo:District" [ label = "rdfs:subClassOf" ];
 	"dbo:Municipality" -> "dbo:GovernmentalAdministrativeRegion" [ label = "rdfs:subClassOf" ];
 	"dbo:District" -> "dbo:GovernmentalAdministrativeRegion" [ label = "rdfs:subClassOf" ];
-	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" -> "http://schema.org/Event" [ label = "rdfs:subClassOf" ];
-	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" -> "600c35e0:16ab1152686:-7fd3" [ label = "rdfs:subClassOf" ];
-	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" -> "600c35e0:16ab1152686:-7fd8" [ label = "rdfs:subClassOf" ];
-	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" -> "600c35e0:16ab1152686:-7fdd" [ label = "rdfs:subClassOf" ];
-	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" -> "600c35e0:16ab1152686:-7fe2" [ label = "rdfs:subClassOf" ];
+	"base:Evento" -> "http://schema.org/Event" [ label = "rdfs:subClassOf" ];
+	"base:Evento" -> "162a934de57bfd790fcca892ad4d83f4" [ label = "rdfs:subClassOf" ];
+	"base:Evento" -> "26c566e801bffb6ad5a5921c0cf81096" [ label = "rdfs:subClassOf" ];
+	"base:Evento" -> "0a78c9341391645af6aebd6894d93474" [ label = "rdfs:subClassOf" ];
+	"base:Evento" -> "b974092bff3781867d0224f40da4071d" [ label = "rdfs:subClassOf" ];
 	"esequip:Equipamiento" -> "http://schema.org/Place" [ label = "rdfs:subClassOf" ];
-	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento" -> "600c35e0:16ab1152686:-7fc2" [ label = "rdfs:subClassOf" ];
-	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento" -> "600c35e0:16ab1152686:-7fc7" [ label = "rdfs:subClassOf" ];
-	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento" -> "600c35e0:16ab1152686:-7fcc" [ label = "rdfs:subClassOf" ];
+	"base:RolIntegranteEvento" -> "40a1096c1abd292a77729c04044ed951" [ label = "rdfs:subClassOf" ];
+	"base:RolIntegranteEvento" -> "d3b296f242c8f42c30e00d768d98c1c1" [ label = "rdfs:subClassOf" ];
+	"base:RolIntegranteEvento" -> "24bd220c922d7633c2abc0b45f04e096" [ label = "rdfs:subClassOf" ];
 	"esadm:Municipio" -> "dbo:Municipality" [ label = "rdfs:subClassOf" ];
 
 }
