@@ -558,7 +558,7 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://schema.org/Place
 <http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Entities that have a somewhat fixed, physical extension." .
-<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/Event> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/Place> .
 <http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place" .
 # 
 # http://schema.org/Text
@@ -576,7 +576,7 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference to the documentation associated with the event."@en .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Referencia a la documentación asociada al evento."@es .
-<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipall> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion> <http://www.w3.org/2000/01/rdf-schema#label> "Documentación"@es .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion> <http://www.w3.org/2000/01/rdf-schema#label> "Documentation"@en .
 # 
@@ -803,13 +803,14 @@ _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
 <http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2002/07/owl#disjointWith> <http://xmlns.com/foaf/0.1/Person> .
 <http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2000/01/rdf-schema#comment> "A class of Agents."@en .
+<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
 <http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2000/01/rdf-schema#label> "Group"@en .
 # 
 # http://xmlns.com/foaf/0.1/Person
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A person."@en .
-<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://xmlns.com/foaf/0.1/" .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
 # 
 # 
