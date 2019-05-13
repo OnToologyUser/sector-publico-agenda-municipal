@@ -16,32 +16,32 @@ Adicionalmente, en este vocabulario se han utilizado varios esquemas de concepto
   El evento se asocia a través de la propiedad [schema:location](https://schema.org/schemaLocation) con una instancia de [schema:Place](https://schema.org/Place) que corresponde al lugar donde se realiza el evento y que tiene un [schema:address](https://schema.org/address) (dirección). El evento tiene como [esagm:ambitoEvento](#ambitoEvento) al ayuntamiento del municipio Madrid que ha sido definido por el Instituto Geográfico Nacional (ign) como el recurso de tipo municipio con código 28079. Además se define una instancia de la clase [esagm:RolIntegranteEvento](#RolIntegranteEvento) que permite relacionar el evento con cada titular o asistente, en este caso se proporciona información acerca del titular del evento al cual se le ha generado un identificador único a partir de sus nombres y apellidos. 
 </span>
 <pre>
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/36c976301328a10566334e7e2c69c04c&gt; a esagm:Evento ;
+&lt;http://vocab.ciudadesabiertas.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/36c976301328a10566334e7e2c69c04c&gt; a esagm:Evento ;
 	schema:name "REUNIÓN CON AUXILIARES DE INFORMACIÓN, ATENCIÓN AL PÚBLICO Y CONTROL DE ENTRADAS EN EQUIPAMIENTOS ADSCRITOS AL DISTRITO DE VILLAVERDE."@es ;
 	schema:startDate "2018-04-12T17:30:00"^^xsd:dateTime ;
-	esagm:tipoEvento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-evento/reunion-interna&gt; .
+	esagm:tipoEvento &lt;http://vocab.ciudadesabiertas.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-evento/reunion-interna&gt; .
 _:node1daboeatmx5 a schema:Place ;
 	schema:address "JUNTA MUNICIPAL DE VILLAVERDE. C/ ARROYO BUENO, 53"@es .
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/36c976301328a10566334e7e2c69c04c&gt; schema:location _:node1daboeatmx5 ;
+&lt;http://vocab.ciudadesabiertas.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/36c976301328a10566334e7e2c69c04c&gt; schema:location _:node1daboeatmx5 ;
 	esagm:ambitoEvento &lt;https://datos.ign.es/recurso/btn100/municipio/28079&gt; .
 _:node1daboeatmx6 a esagm:RolIntegranteEvento ;
-	esagm:evento &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/36c976301328a10566334e7e2c69c04c&gt; ;
-	esagm:rol &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante/titular&gt; ;
-	esagm:integra &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/persona/73bec760fc4bd4f37ce7a178d32f4f5f&gt; .
+	esagm:evento &lt;http://vocab.ciudadesabiertas.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/36c976301328a10566334e7e2c69c04c&gt; ;
+	esagm:rol &lt;http://vocab.ciudadesabiertases/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante/titular&gt; ;
+	esagm:integra &lt;http://vocab.ciudadesabiertas.es/datosabiertos/recurso/sector-publico/agenda-municipal/persona/73bec760fc4bd4f37ce7a178d32f4f5f&gt; .
 </pre>
 <span class="markdown">
   Para cada persona que trabaja en el ayuntamiento se crea una instancia de la clase [org:Membership](https://www.w3.org/TR/vocab-org/#class-membership) (membresía) el cual relaciona a la persona con su rol y la unidad administrativa en donde lo ejerce a través de las propiedades [org.role](https://www.w3.org/TR/vocab-org/#org:role), [org:member](https://www.w3.org/TR/vocab-org/#org:member) y [org:organization](https://www.w3.org/TR/vocab-org/#org:organization). En este caso la persona titular del evento descrito anteriormente es un Concejal del Grupo Municipal Socialista de Madrid.
 </span>
 <pre>
 _:node1da8ree2jx81 a org:Membership ;
-	org:role &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/cargo/fa8ede20b126786e792be6c554834226&gt; ;
-	org:member &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/persona/73bec760fc4bd4f37ce7a178d32f4f5f&gt; ;
-	org:organization &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/organizacion/47537a424972964d9a1c8b0bc694053d&gt; .
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/persona/73bec760fc4bd4f37ce7a178d32f4f5f&gt; a foaf:Agent ;
+	org:role &lt;http://vocab.ciudadesabiertas.es/datosabiertos/recurso/sector-publico/agenda-municipal/cargo/fa8ede20b126786e792be6c554834226&gt; ;
+	org:member &lt;http://vocab.ciudadesabiertas.es/datosabiertos/recurso/sector-publico/agenda-municipal/persona/73bec760fc4bd4f37ce7a178d32f4f5f&gt; ;
+	org:organization &lt;http://vocab.ciudadesabiertas.es/datosabiertos/recurso/sector-publico/agenda-municipal/organizacion/47537a424972964d9a1c8b0bc694053d&gt; .
+&lt;http://vocab.ciudadesabiertas.es/datosabiertos/recurso/sector-publico/agenda-municipal/persona/73bec760fc4bd4f37ce7a178d32f4f5f&gt; a foaf:Agent ;
 	foaf:name "Ignacio De Benito Pérez"@es .
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/cargo/fa8ede20b126786e792be6c554834226&gt; a org:Role ;
+&lt;http://vocab.ciudadesabiertas.es/datosabiertos/recurso/sector-publico/agenda-municipal/cargo/fa8ede20b126786e792be6c554834226&gt; a org:Role ;
 	rdfs:label "Concejal"@es .
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/organizacion/47537a424972964d9a1c8b0bc694053d&gt; a org:Organization ;
+&lt;http://vocab.ciudadesabiertas.es/datosabiertos/recurso/sector-publico/agenda-municipal/organizacion/47537a424972964d9a1c8b0bc694053d&gt; a org:Organization ;
 	foaf:name "GRUPO MUNICIPAL SOCIALISTA DE MADRID"@es ;
 	orges:ambitoCompetencias &lt;https://datos.ign.es/recurso/btn100/municipio/28079&gt; .
 </pre>
@@ -50,14 +50,14 @@ _:node1da8ree2jx81 a org:Membership ;
   En el siguiente ejemplo se tiene una Junta de Distrito ordinaria realizada en el municipio de Zaragoza. Para este evento se ha creado una instancia de la clase [Documentacion](#Documentacion) con un [nombreDoc](#nombreDoc) (Orden del Día) y un [uriDoc](#uriDoc), en este caso la documentación es [publica](#publico).
 </span>
 <pre>
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/fc61b132f300dc0ec7138371e633b8be&gt; a esagm:Evento ;
+&lt;http://vocab.ciudadesabiertas.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/fc61b132f300dc0ec7138371e633b8be&gt; a esagm:Evento ;
 	schema:name "Sesión ordinaria del Pleno de la Junta Vecinal Monzalbarba"@es ;
 	schema:startDate "2019-04-16T19:00:00"^^xsd:dateTime ;
-	esagm:tipoEvento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-evento/junta-de-distrito&gt; .
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/fc61b132f300dc0ec7138371e633b8be> esagm:documentacion _:node1daboeatmx99 ;
+	esagm:tipoEvento &lt;http://vocab.ciudadesabiertas.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-evento/junta-de-distrito&gt; .
+&lt;http://vocab.ciudadesabiertas.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/fc61b132f300dc0ec7138371e633b8be> esagm:documentacion _:node1daboeatmx99 ;
 	esagm:ambitoEvento &lt;https://datos.ign.es/recurso/btn100/municipio/50297&gt; ;
-	esagm:tipoSesion &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-sesion/ordinaria&gt; .
-_:node1daboeatmx99 a &lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal/Documentacion&gt; ;
+	esagm:tipoSesion &lt;http://vocab.ciudadesabiertasa.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-sesion/ordinaria&gt; .
+_:node1daboeatmx99 a &lt;http://vocab.ciudadesabiertas.es/datosabiertos/def/sector-publico/agenda-municipal/Documentacion&gt; ;
 	esagm:nombreDoc "Orden del día"@es ;
 	esagm:uriDoc &lt;http://www.zaragoza.es/pubFehacientev2/servlet/PubFehacienteServlet?ID=73762&gt; ;
 	esagm:publico "true"^^xsd:boolean .
