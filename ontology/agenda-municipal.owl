@@ -614,7 +614,7 @@ dbo:Municipality rdf:type owl:Class ;
 ###  http://schema.org/Place
 <http://schema.org/Place> rdf:type owl:Class ;
                           rdfs:comment "Entities that have a somewhat fixed, physical extension." ;
-                          rdfs:isDefinedBy schema:Event ;
+                          rdfs:isDefinedBy schema:Place ;
                           rdfs:label "Place" .
 
 
@@ -635,7 +635,7 @@ dbo:Municipality rdf:type owl:Class ;
 :Documentacion rdf:type owl:Class ;
                rdfs:comment "Reference to the documentation associated with the event."@en ,
                             "Referencia a la documentación asociada al evento."@es ;
-               rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipall> ;
+               rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
                rdfs:label "Documentación"@es ,
                           "Documentation"@en .
 
@@ -847,6 +847,7 @@ foaf:Group rdf:type owl:Class ;
            rdfs:subClassOf foaf:Agent ;
            owl:disjointWith foaf:Person ;
            rdfs:comment "A class of Agents."@en ;
+           rdfs:isDefinedBy foaf: ;
            rdfs:label "Group"@en .
 
 
@@ -854,7 +855,7 @@ foaf:Group rdf:type owl:Class ;
 foaf:Person rdf:type owl:Class ;
             rdfs:subClassOf foaf:Agent ;
             rdfs:comment "A person."@en ;
-            rdfs:isDefinedBy "http://xmlns.com/foaf/0.1/" ;
+            rdfs:isDefinedBy foaf: ;
             rdfs:label "Person"@en .
 
 
