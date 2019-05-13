@@ -96,7 +96,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23canal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#canal"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -115,7 +115,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23canal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#canal"
   } ]
 }, {
   "@id" : "_:genid32",
@@ -131,10 +131,10 @@
   "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23RolIntegranteEvento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23rolIntegrante"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rolIntegrante"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -144,10 +144,10 @@
   "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23RolIntegranteEvento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23rolIntegrante"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rolIntegrante"
   } ]
 }, {
   "@id" : "_:genid37",
@@ -170,7 +170,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23tipoAcceso"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoAcceso"
   } ]
 }, {
   "@id" : "_:genid41",
@@ -179,7 +179,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23tipoAcceso"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoAcceso"
   } ]
 }, {
   "@id" : "_:genid42",
@@ -202,7 +202,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23tipoSesion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoSesion"
   } ]
 }, {
   "@id" : "_:genid46",
@@ -211,16 +211,16 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23tipoSesion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoSesion"
   } ]
 }, {
   "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Documentacion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23documentacion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#documentacion"
   } ]
 }, {
   "@id" : "_:genid48",
@@ -229,7 +229,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23tipoEvento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoEvento"
   } ]
 }, {
   "@id" : "_:genid49",
@@ -254,10 +254,10 @@
   "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Evento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23evento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#evento"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -267,10 +267,10 @@
   "@id" : "_:genid53",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Evento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23evento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#evento"
   } ]
 }, {
   "@id" : "_:genid54",
@@ -289,7 +289,7 @@
     "@id" : "http://xmlns.com/foaf/0.1/Agent"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23integra"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#integra"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -302,7 +302,7 @@
     "@id" : "http://xmlns.com/foaf/0.1/Agent"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23integra"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#integra"
   } ]
 }, {
   "@id" : "_:genid59",
@@ -321,7 +321,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23rol"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rol"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -334,7 +334,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23rol"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rol"
   } ]
 }, {
   "@id" : "_:genid7",
@@ -358,10 +358,6 @@
 }, {
   "@id" : "http://dbpedia.org/ontology/District",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://mappings.dbpedia.org/index.php/OntologyClass:District"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "district"
@@ -384,15 +380,18 @@
   "@id" : "http://dbpedia.org/ontology/Municipality",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An administrative body governing a territorial unity on the lower level, administering one or a few more settlements"
+  }, {
     "@language" : "es",
     "@value" : "Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://dbpedia.org/ontology/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "municipality"
+  }, {
+    "@language" : "es",
+    "@value" : "municipio"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"
@@ -767,23 +766,35 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "es",
-    "@value" : "Oficina Técnica de Participación, Transparencia y Gobierno Abierto - Ayuntamiento de Zaragoza"
+    "@value" : "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"
+  }, {
+    "@language" : "es",
+    "@value" : "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"
+  }, {
+    "@language" : "es",
+    "@value" : "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"
+  }, {
+    "@language" : "es",
+    "@value" : "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"
+  }, {
+    "@language" : "es",
+    "@value" : "María del Mar Arribas de Andrés - Ayuntamiento de Madrid"
   }, {
     "@language" : "es",
     "@value" : "Red.es"
-  }, {
-    "@language" : "es",
-    "@value" : "Servicio de Acceso a la Información - Ayuntamiento de Madrid"
   }, {
     "@language" : "es",
     "@value" : "Servicio de Informática - Ayuntamiento de Santiago de Compostela"
   }, {
     "@language" : "es",
     "@value" : "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"
+  }, {
+    "@language" : "es",
+    "@value" : "Víctor Morlán Plo - Ayuntamiento de Zaragoza"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)"
@@ -820,13 +831,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "sta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   \n\nEn esta versión se han clases y propiedades de acuerdo a los requisitos y glosario de conceptos propuestos en la reuni'on del 22/03/2019"
+    "@value" : "sta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   \nEn esta versión se han clases y propiedades de acuerdo a los requisitos y glosario de conceptos propuestos en la reuni'on del 22/03/2019"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Documentacion",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -846,7 +857,7 @@
     "@value" : "Documentation"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Evento",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -881,7 +892,7 @@
     "@id" : "_:genid48"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23RolIntegranteEvento",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -908,7 +919,7 @@
     "@id" : "_:genid59"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23ambitoEvento",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#ambitoEvento",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -918,7 +929,7 @@
     "@value" : "Ámbito territorial de un evento."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Evento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -931,7 +942,7 @@
     "@id" : "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23canal",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#canal",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -941,7 +952,7 @@
     "@value" : "Medio de realización del evento: presencial o en línea."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Evento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal"
@@ -957,7 +968,7 @@
     "@id" : "_:genid3"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23documentacion",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#documentacion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -967,7 +978,7 @@
     "@value" : "Association with documentation such as minutes, motions, videos."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Evento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal"
@@ -980,10 +991,10 @@
     "@value" : "associated with"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Documentacion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23evento",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#evento",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -993,7 +1004,7 @@
     "@value" : "Evento en el que participa un integrante con un rol."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23RolIntegranteEvento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal"
@@ -1006,13 +1017,13 @@
     "@value" : "evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Evento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23rolIntegrante"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rolIntegrante"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23formato",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#formato",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1022,7 +1033,7 @@
     "@value" : "Formato del documento: imagen, video, texto."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Documentacion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "es",
@@ -1039,7 +1050,7 @@
     "@id" : "_:genid23"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23integra",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#integra",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -1049,7 +1060,7 @@
     "@value" : "The member of an event with a certain role."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23RolIntegranteEvento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal"
@@ -1065,7 +1076,7 @@
     "@id" : "http://xmlns.com/foaf/0.1/Agent"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23nombreDoc",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#nombreDoc",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1075,7 +1086,7 @@
     "@value" : "Nombre de la documentación tal como acta de reunión, moción, etc."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Documentacion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal"
@@ -1091,7 +1102,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23publico",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#publico",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -1101,7 +1112,7 @@
     "@value" : "Whether the documentation is public access or not (private)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Documentacion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal"
@@ -1117,7 +1128,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23rol",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rol",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -1127,23 +1138,23 @@
     "@value" : "The role of a member of an event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23RolIntegranteEvento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "rol"
+    "@value" : "rol en evento"
   }, {
     "@language" : "en",
-    "@value" : "role"
+    "@value" : "role in event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid7"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23rolIntegrante",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rolIntegrante",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -1153,7 +1164,7 @@
     "@value" : "Role of a  member of an event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Evento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "es",
@@ -1167,10 +1178,10 @@
     "@value" : "rol Integrante"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23RolIntegranteEvento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23tipoAcceso",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoAcceso",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -1180,7 +1191,7 @@
     "@value" : "Type of event attendance: public, private or restricted."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Evento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal"
@@ -1196,7 +1207,7 @@
     "@id" : "_:genid11"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23tipoEvento",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoEvento",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -1206,7 +1217,7 @@
     "@value" : "Typology that defines to what category the event belongs. Event types are represented by a list of concepts."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Evento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal"
@@ -1221,7 +1232,7 @@
     "@id" : "_:genid15"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23tipoSesion",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoSesion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1231,7 +1242,7 @@
     "@value" : "Para los eventos de órganos colegiados, tipo de sesión puede ser ordinaria, extraordinaria o extraordinaria urgente"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Evento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal"
@@ -1247,7 +1258,7 @@
     "@id" : "_:genid19"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23uriDoc",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#uriDoc",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -1257,7 +1268,7 @@
     "@value" : "URI where the documentation is located."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal#%23Documentacion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal"
@@ -1305,7 +1316,6 @@
     "@value" : "Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "es",
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
