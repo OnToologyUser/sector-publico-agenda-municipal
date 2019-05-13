@@ -19,12 +19,12 @@
                                                                                                                       "Víctor Morlán Plo - Ayuntamiento de Zaragoza"@es ;
                                                                         <http://purl.org/dc/elements/1.1/creator> "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
                                                                                                                   "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" ;
-                                                                        <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal"@es ;
+                                                                        <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"@es ;
                                                                         <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" ;
                                                                         <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos sobre los eventos que se realizan dentro de la agenda municipal y sus asistentes, convocantes y titulares"@es ,
                                                                                                                 "Vocabulary for the representation of data on the events that take place within the municipal agenda and their participants"@en ;
                                                                         <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)" ;
-                                                                        <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal.ttl"@es ;
+                                                                        <http://purl.org/dc/terms/hasFormat> "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal.owl"@es ;
                                                                         <http://purl.org/dc/terms/issued> "2019-03-22"@es ;
                                                                         <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
                                                                         rdfs:comment """sta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   
@@ -184,10 +184,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
 ###  http://schema.org/name
 <http://schema.org/name> rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf <rdfs:label> ;
-                         rdfs:domain [ rdf:type owl:Class ;
-                                       owl:unionOf ( <http://schema.org/Thing>
-                                                   )
-                                     ] ;
+                         rdfs:domain <http://schema.org/Thing> ;
                          rdfs:range <http://schema.org/Text> .
 
 
@@ -216,6 +213,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
               rdfs:range <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> ;
               rdfs:comment "Territorial scope of an event."@en ,
                            "Ámbito territorial de un evento."@es ;
+              rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
               rdfs:label "territorial scope"@en ,
                          "ámbito territorial"@es .
 
@@ -233,7 +231,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                   ] ;
        rdfs:comment "Means for the realization of the event: face-to-face or online."@en ,
                     "Medio de realización del evento: presencial o en línea."@es ;
-       rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal" ;
+       rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
        rdfs:label "canal"@es ,
                   "channel"@en .
 
@@ -244,7 +242,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                rdfs:range :Documentacion ;
                rdfs:comment "Asociación con la documentación como actas, mociones, vídeos."@es ,
                             "Association with documentation such as minutes, motions, videos."@en ;
-               rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal" ;
+               rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
                rdfs:label "asociado con"@es ,
                           "associated with"@en .
 
@@ -256,7 +254,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
         rdfs:range :Evento ;
         rdfs:comment "Event in which a member participates with a role."@en ,
                      "Evento en el que participa un integrante con un rol."@es ;
-        rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal" ;
+        rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
         rdfs:label "event"@es ,
                    "evento"@en .
 
@@ -267,7 +265,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
          rdfs:range <http://xmlns.com/foaf/0.1/Agent> ;
          rdfs:comment "El integrante de un evento con un cierto rol."@es ,
                       "The member of an event with a certain role."@en ;
-         rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal" ;
+         rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
          rdfs:label "integra"@es ,
                     "integrates"@en .
 
@@ -285,7 +283,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                 ] ;
      rdfs:comment "El rol que puede tener un integrante de un evento."@es ,
                   "The role of a member of an event."@en ;
-     rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal" ;
+     rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
      rdfs:label "rol en evento"@es ,
                 "role in event"@en .
 
@@ -296,7 +294,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                rdfs:range :RolIntegranteEvento ;
                rdfs:comment "Rol del integrante de un evento."@es ,
                             "Role of a  member of an event."@en ;
-               rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal"@es ;
+               rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"@es ;
                rdfs:label "member role"@en ,
                           "rol Integrante"@es .
 
@@ -314,7 +312,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                        ] ;
             rdfs:comment "Tipo de asistencia al evento: público, privado o restringido."@es ,
                          "Type of event attendance: public, private or restricted."@en ;
-            rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal" ;
+            rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
             rdfs:label "attendance type"@en ,
                        "tipo de acceso"@es .
 
@@ -332,7 +330,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                        ] ;
             rdfs:comment "Tipología que define a qué categoría pertenece el evento. Los tipos de evento se representan mediante una lista de conceptos."@es ,
                          "Typology that defines to what category the event belongs. Event types are represented by a list of concepts."@en ;
-            rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal" ;
+            rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
             rdfs:label "event type"@es ,
                        "tipo de evento" .
 
@@ -350,7 +348,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                        ] ;
             rdfs:comment "For the events of collegiate bodies, the type id session defines if the session is ordinary, extraordinary or extraordinary urgent"@en ,
                          "Para los eventos de órganos colegiados, tipo de sesión puede ser ordinaria, extraordinaria o extraordinaria urgente"@es ;
-            rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal" ;
+            rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
             rdfs:label "session type"@en ,
                        "tipo de sesion"@es .
 
@@ -361,7 +359,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                                                                                               rdfs:range <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> ;
                                                                                               rdfs:comment "Competence Scope"@en ,
                                                                                                            "Ámbito territorial de ejercicio de competencias de una organización." ;
-                                                                                              rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#" ;
+                                                                                              rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
                                                                                               rdfs:label "Ámbito de Competencias" .
 
 
@@ -511,7 +509,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                     ] ;
          rdfs:comment "Format of the document: image, video, text."@en ,
                       "Formato del documento: imagen, video, texto."@es ;
-         rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal"@es ;
+         rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"@es ;
          rdfs:label "format"@en ,
                     "formato"@es .
 
@@ -522,7 +520,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
            rdfs:range xsd:string ;
            rdfs:comment "Name of the documentation such as minutes of meeting, motion, etc."@en ,
                         "Nombre de la documentación tal como acta de reunión, moción, etc."@es ;
-           rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal" ;
+           rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
            rdfs:label "documentation name"@en ,
                       "nombre documentación"@es .
 
@@ -534,7 +532,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
          rdfs:range xsd:boolean ;
          rdfs:comment "Si la documentación es de acceso público o no (privado)."@es ,
                       "Whether the documentation is public access or not (private)."@en ;
-         rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal" ;
+         rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
          rdfs:label "public"@en ,
                     "público"@es .
 
@@ -546,7 +544,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
         rdfs:range xsd:anyURI ;
         rdfs:comment "URI donde se encuentra la documentación."@es ,
                      "URI where the documentation is located."@en ;
-        rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal" ;
+        rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
         rdfs:label "uri documentación"@es ,
                    "uri documentation"@en .
 
@@ -616,7 +614,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
 :Documentacion rdf:type owl:Class ;
                rdfs:comment "Reference to the documentation associated with the event."@en ,
                             "Referencia a la documentación asociada al evento."@es ;
-               rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal" ;
+               rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipall" ;
                rdfs:label "Documentación"@es ,
                           "Documentation"@en .
 
@@ -682,7 +680,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                         ] ;
         rdfs:comment "Action scheduled to take place at a certain date, time and place."@en ,
                      "Suceso programado para realizarse en una determinada fecha, hora, y lugar."@es ;
-        rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal" ;
+        rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
         rdfs:label "Event in agenda"@en ,
                    "Evento en agenda"@es .
 
@@ -727,7 +725,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                                      ] ;
                      rdfs:comment "Rol que tiene el integrante de un evento como asistente, convocante o titular."@es ,
                                   "Role that the member of an event has as assistant, chair or organizer."@en ;
-                     rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal" ;
+                     rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
                      rdfs:label "Rol integrante del evento"@es ,
                                 "Role member of event"@en .
 
