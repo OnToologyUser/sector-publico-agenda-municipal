@@ -177,7 +177,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                              rdfs:domain <http://schema.org/Event> ;
                              rdfs:range <http://schema.org/Place> ;
                              rdfs:comment "The location of for example where the event is happening, an organization is located, or where an action takes place." ;
-                             rdfs:isDefinedBy "https://schema.org/location" ;
+                             rdfs:isDefinedBy <https://schema.org/location> ;
                              rdfs:label "location" .
 
 
@@ -203,7 +203,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                                rdfs:domain <http://schema.org/Event> ;
                                rdfs:range <http://schema.org/Event> ;
                                rdfs:comment "An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent."@en ;
-                               rdfs:isDefinedBy "https://schema.org/superEvent"@en ;
+                               rdfs:isDefinedBy <https://schema.org/superEvent> ;
                                rdfs:label "superEvent"@en .
 
 
@@ -213,7 +213,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
               rdfs:range <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> ;
               rdfs:comment "Territorial scope of an event."@en ,
                            "Ámbito territorial de un evento."@es ;
-              rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+              rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
               rdfs:label "territorial scope"@en ,
                          "ámbito territorial"@es .
 
@@ -231,7 +231,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                   ] ;
        rdfs:comment "Means for the realization of the event: face-to-face or online."@en ,
                     "Medio de realización del evento: presencial o en línea."@es ;
-       rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+       rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
        rdfs:label "canal"@es ,
                   "channel"@en .
 
@@ -254,7 +254,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
         rdfs:range :Evento ;
         rdfs:comment "Event in which a member participates with a role."@en ,
                      "Evento en el que participa un integrante con un rol."@es ;
-        rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+        rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
         rdfs:label "event"@es ,
                    "evento"@en .
 
@@ -265,7 +265,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
          rdfs:range <http://xmlns.com/foaf/0.1/Agent> ;
          rdfs:comment "El integrante de un evento con un cierto rol."@es ,
                       "The member of an event with a certain role."@en ;
-         rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+         rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
          rdfs:label "integra"@es ,
                     "integrates"@en .
 
@@ -283,7 +283,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                 ] ;
      rdfs:comment "El rol que puede tener un integrante de un evento."@es ,
                   "The role of a member of an event."@en ;
-     rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+     rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
      rdfs:label "rol en evento"@es ,
                 "role in event"@en .
 
@@ -294,7 +294,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                rdfs:range :RolIntegranteEvento ;
                rdfs:comment "Rol del integrante de un evento."@es ,
                             "Role of a  member of an event."@en ;
-               rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"@es ;
+               rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
                rdfs:label "member role"@en ,
                           "rol Integrante"@es .
 
@@ -312,7 +312,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                        ] ;
             rdfs:comment "Tipo de asistencia al evento: público, privado o restringido."@es ,
                          "Type of event attendance: public, private or restricted."@en ;
-            rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+            rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
             rdfs:label "attendance type"@en ,
                        "tipo de acceso"@es .
 
@@ -330,7 +330,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                        ] ;
             rdfs:comment "Tipología que define a qué categoría pertenece el evento. Los tipos de evento se representan mediante una lista de conceptos."@es ,
                          "Typology that defines to what category the event belongs. Event types are represented by a list of concepts."@en ;
-            rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+            rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
             rdfs:label "event type"@es ,
                        "tipo de evento" .
 
@@ -348,7 +348,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                        ] ;
             rdfs:comment "For the events of collegiate bodies, the type id session defines if the session is ordinary, extraordinary or extraordinary urgent"@en ,
                          "Para los eventos de órganos colegiados, tipo de sesión puede ser ordinaria, extraordinaria o extraordinaria urgente"@es ;
-            rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+            rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
             rdfs:label "session type"@en ,
                        "tipo de sesion"@es .
 
@@ -359,14 +359,14 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                                                                                               rdfs:range <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> ;
                                                                                               rdfs:comment "Competence Scope"@en ,
                                                                                                            "Ámbito territorial de ejercicio de competencias de una organización." ;
-                                                                                              rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+                                                                                              rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
                                                                                               rdfs:label "Ámbito de Competencias" .
 
 
 ###  http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty ;
                                                rdfs:range <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                                               rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"@en ;
+                                               rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
                                                rdfs:label "is in scheme"@en ;
                                                <http://www.w3.org/2004/02/skos/core#definition> "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
                                                <http://www.w3.org/2004/02/skos/core#scopeNote> "A concept may be a member of more than one concept scheme."@en .
@@ -509,7 +509,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                     ] ;
          rdfs:comment "Format of the document: image, video, text."@en ,
                       "Formato del documento: imagen, video, texto."@es ;
-         rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"@es ;
+         rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
          rdfs:label "format"@en ,
                     "formato"@es .
 
@@ -520,7 +520,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
            rdfs:range xsd:string ;
            rdfs:comment "Name of the documentation such as minutes of meeting, motion, etc."@en ,
                         "Nombre de la documentación tal como acta de reunión, moción, etc."@es ;
-           rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+           rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
            rdfs:label "documentation name"@en ,
                       "nombre documentación"@es .
 
@@ -532,7 +532,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
          rdfs:range xsd:boolean ;
          rdfs:comment "Si la documentación es de acceso público o no (privado)."@es ,
                       "Whether the documentation is public access or not (private)."@en ;
-         rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+         rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
          rdfs:label "public"@en ,
                     "público"@es .
 
@@ -544,7 +544,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
         rdfs:range xsd:anyURI ;
         rdfs:comment "URI donde se encuentra la documentación."@es ,
                      "URI where the documentation is located."@en ;
-        rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+        rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
         rdfs:label "uri documentación"@es ,
                    "uri documentation"@en .
 
@@ -554,7 +554,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                                  rdfs:domain owl:Thing ;
                                  rdfs:range rdfs:Literal ;
                                  rdfs:comment "A name for some thing."@en ;
-                                 rdfs:isDefinedBy "http://xmlns.com/foaf/0.1/"@en ;
+                                 rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
                                  rdfs:label "name"@en .
 
 
@@ -586,14 +586,14 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
 ###  http://schema.org/Event
 <http://schema.org/Event> rdf:type owl:Class ;
                           rdfs:comment "An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the offers property. Repeated events may be structured as separate Event objects." ;
-                          rdfs:isDefinedBy "https://schema.org/Event" ;
+                          rdfs:isDefinedBy <https://schema.org/Event> ;
                           rdfs:label "Event"@en .
 
 
 ###  http://schema.org/Place
 <http://schema.org/Place> rdf:type owl:Class ;
                           rdfs:comment "Entities that have a somewhat fixed, physical extension." ;
-                          rdfs:isDefinedBy "https://schema.org/Event" ;
+                          rdfs:isDefinedBy <https://schema.org/Event> ;
                           rdfs:label "Place" .
 
 
@@ -606,7 +606,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
 ###  http://schema.org/Thing
 <http://schema.org/Thing> rdf:type owl:Class ;
                           rdfs:comment "The most generic type of item."@en ;
-                          rdfs:isDefinedBy "https://schema.org/Thing" ;
+                          rdfs:isDefinedBy <https://schema.org/Thing> ;
                           rdfs:label "Thing"@en .
 
 
@@ -614,7 +614,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
 :Documentacion rdf:type owl:Class ;
                rdfs:comment "Reference to the documentation associated with the event."@en ,
                             "Referencia a la documentación asociada al evento."@es ;
-               rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipall" ;
+               rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipall> ;
                rdfs:label "Documentación"@es ,
                           "Documentation"@en .
 
@@ -680,7 +680,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                         ] ;
         rdfs:comment "Action scheduled to take place at a certain date, time and place."@en ,
                      "Suceso programado para realizarse en una determinada fecha, hora, y lugar."@es ;
-        rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+        rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
         rdfs:label "Event in agenda"@en ,
                    "Evento en agenda"@es .
 
@@ -725,7 +725,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                                      ] ;
                      rdfs:comment "Rol que tiene el integrante de un evento como asistente, convocante o titular."@es ,
                                   "Role that the member of an event has as assistant, chair or organizer."@en ;
-                     rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+                     rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
                      rdfs:label "Rol integrante del evento"@es ,
                                 "Role member of event"@en .
 
@@ -735,7 +735,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                                                                                   rdfs:subClassOf <http://dbpedia.org/ontology/District> ;
                                                                                   <http://purl.org/dc/terms/issued> "2014-03-28"@es ;
                                                                                   rdfs:comment "Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]"@es ;
-                                                                                  rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio" ;
+                                                                                  rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
                                                                                   rdfs:label "Distrito"@es .
 
 
@@ -757,7 +757,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
                                                                                                     rdfs:subClassOf <http://schema.org/Place> ;
                                                                                                     rdfs:comment "Equipamientos a los que un ciudadano puede acudir pertenecientes a una administración."@es ,
                                                                                                                  "Equipment to which a citizen can access belonging to an administration."@en ;
-                                                                                                    rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal"@en ;
+                                                                                                    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal> ;
                                                                                                     rdfs:label "equipamiento"@es ,
                                                                                                                "equipment"@en .
 
@@ -766,7 +766,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
 <http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
                                               owl:disjointWith <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
                                               <http://purl.org/dc/terms/issued> "2008-05-xx" ;
-                                              rdfs:isDefinedBy "http://www.w3.org/2008/05/skos" ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2008/05/skos> ;
                                               rdfs:label "Concept"@en ;
                                               <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought."@en .
 
@@ -776,7 +776,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
                                                     <http://purl.org/dc/terms/issued> "2008-05-xx"@en ;
                                                     rdfs:comment "A concept scheme may be defined to include concepts from different sources."@en ,
                                                                  "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies."@en ;
-                                                    rdfs:isDefinedBy "http://www.w3.org/2008/05/skos"@en ;
+                                                    rdfs:isDefinedBy <http://www.w3.org/2008/05/skos> ;
                                                     rdfs:label "Concept Scheme"@en ;
                                                     <http://www.w3.org/2008/05/skos#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
 
@@ -787,7 +787,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
                                                        <http://www.w3.org/ns/org#Role> ;
                                       rdfs:comment "Indicates the nature of an Agent's membership of an organization. Represents an n-ary relation between an Agent, an Organization and a Role. It is possible to directly indicate membership, independent of the specific Role, through use of the `org:memberOf` property."@en ,
                                                    "Pertenencia o afiliación de un agente a una organización. Es una relación n-aria entre un agente, una organización y una actividad. Es posible indicar pertenencia mediante el uso de la propiedad `org:memberOf`, independientemente de la actividad específica que se desempeñe."@es ;
-                                      rdfs:isDefinedBy "http://www.w3.org/ns/org" ;
+                                      rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
                                       rdfs:label "membership"@en ,
                                                  "membresía"@es .
 
@@ -810,7 +810,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
                                 rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
                                 rdfs:comment "Denotes a role that a Person or other Agent can take in an organization. Instances of this class describe the abstract role; to denote a specific instance of a person playing that role in a specific organization use an instance of `org:Membership`. It is common for roles to be arranged in some taxonomic structure and we use SKOS to represent that. The normal SKOS lexical properties should be used when labelling the Role. Additional descriptive properties for the Role, such as a Salary band, may be added by extension vocabularies."@en ,
                                              "Función que una persona o agente desempeña en el seno de una organización. Las instancias de esta clase describen la actividad en abstracto; si lo que se pretende es incluir una instancia que refleje la función o actividad que desempeña una persona en concreto en una organización específica, se indica el uso de instancias de la clase `org:Membership`. Es común que dichas actividades se representen en una estructura taxonómica mediante SKOS. Las propiedades léxicas de SKOS deberían utilizarse a la hora de denominar o etiquetar la actividad desempeñada. Para añadir propiedades descriptivas adicionales, como rango salarial, se tendrá que recurrir a vocabularios externos."@es ;
-                                rdfs:isDefinedBy "http://www.w3.org/ns/org" ;
+                                rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
                                 rdfs:label "actividad"@es ,
                                            "role"@en .
 
