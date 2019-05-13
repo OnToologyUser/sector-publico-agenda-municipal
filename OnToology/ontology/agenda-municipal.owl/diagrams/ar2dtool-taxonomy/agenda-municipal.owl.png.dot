@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "162a934de57bfd790fcca892ad4d83f4" "0a78c9341391645af6aebd6894d93474" "esequip:Equipamiento" "dbo:GovernmentalAdministrativeRegion" "foaf:Agent" "b974092bff3781867d0224f40da4071d" "dbo:District" "24bd220c922d7633c2abc0b45f04e096" "base:Evento" "http://schema.org/Event" "26c566e801bffb6ad5a5921c0cf81096" "foaf:Person" "d3b296f242c8f42c30e00d768d98c1c1" "esadm:Distrito" "dbo:Municipality" "40a1096c1abd292a77729c04044ed951" "foaf:Group" "skos:Concept" "base:RolIntegranteEvento" "esadm:Municipio" "http://www.w3.org/ns/org#Organization" "http://www.w3.org/ns/org#Role" "http://schema.org/Place" ; /*classes style*/
+node [shape = rectangle, color="black"]; "esequip:Equipamiento" "dbo:GovernmentalAdministrativeRegion" "foaf:Agent" "05b4396ca92327d763dfcbe50c9a7585" "dbo:District" "6f67834c08c5883942612aeaea439e90" "base:Evento" "332c6ee93581879c979cac484575abfb" "53a57a479d4a05e3f02bcd029367a84c" "http://schema.org/Event" "foaf:Person" "esadm:Distrito" "59305f0c27b957c7afaf50a258a68f64" "dbo:Municipality" "foaf:Group" "skos:Concept" "base:RolIntegranteEvento" "esadm:Municipio" "http://www.w3.org/ns/org#Role" "http://www.w3.org/ns/org#Organization" "http://schema.org/Place" "90a4de23aeb1bdc8cc0cf4840ab75680" "7f64a0f7b80413fa1dc9535a61fa5856" ; /*classes style*/
 	"foaf:Group" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
 	"http://www.w3.org/ns/org#Organization" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
 	"http://www.w3.org/ns/org#Role" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
@@ -10,14 +10,14 @@ node [shape = rectangle, color="black"]; "162a934de57bfd790fcca892ad4d83f4" "0a7
 	"dbo:Municipality" -> "dbo:GovernmentalAdministrativeRegion" [ label = "rdfs:subClassOf" ];
 	"dbo:District" -> "dbo:GovernmentalAdministrativeRegion" [ label = "rdfs:subClassOf" ];
 	"base:Evento" -> "http://schema.org/Event" [ label = "rdfs:subClassOf" ];
-	"base:Evento" -> "162a934de57bfd790fcca892ad4d83f4" [ label = "rdfs:subClassOf" ];
-	"base:Evento" -> "26c566e801bffb6ad5a5921c0cf81096" [ label = "rdfs:subClassOf" ];
-	"base:Evento" -> "0a78c9341391645af6aebd6894d93474" [ label = "rdfs:subClassOf" ];
-	"base:Evento" -> "b974092bff3781867d0224f40da4071d" [ label = "rdfs:subClassOf" ];
+	"base:Evento" -> "53a57a479d4a05e3f02bcd029367a84c" [ label = "rdfs:subClassOf" ];
+	"base:Evento" -> "90a4de23aeb1bdc8cc0cf4840ab75680" [ label = "rdfs:subClassOf" ];
+	"base:Evento" -> "59305f0c27b957c7afaf50a258a68f64" [ label = "rdfs:subClassOf" ];
+	"base:Evento" -> "7f64a0f7b80413fa1dc9535a61fa5856" [ label = "rdfs:subClassOf" ];
 	"esequip:Equipamiento" -> "http://schema.org/Place" [ label = "rdfs:subClassOf" ];
-	"base:RolIntegranteEvento" -> "40a1096c1abd292a77729c04044ed951" [ label = "rdfs:subClassOf" ];
-	"base:RolIntegranteEvento" -> "d3b296f242c8f42c30e00d768d98c1c1" [ label = "rdfs:subClassOf" ];
-	"base:RolIntegranteEvento" -> "24bd220c922d7633c2abc0b45f04e096" [ label = "rdfs:subClassOf" ];
+	"base:RolIntegranteEvento" -> "332c6ee93581879c979cac484575abfb" [ label = "rdfs:subClassOf" ];
+	"base:RolIntegranteEvento" -> "05b4396ca92327d763dfcbe50c9a7585" [ label = "rdfs:subClassOf" ];
+	"base:RolIntegranteEvento" -> "6f67834c08c5883942612aeaea439e90" [ label = "rdfs:subClassOf" ];
 	"esadm:Municipio" -> "dbo:Municipality" [ label = "rdfs:subClassOf" ];
 
 }

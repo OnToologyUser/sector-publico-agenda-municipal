@@ -540,7 +540,7 @@
     "@value" : "An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the offers property. Repeated events may be structured as separate Event objects."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://schema.org/Event"
+    "@id" : "https://schema.org/Event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -553,7 +553,7 @@
     "@value" : "Entities that have a somewhat fixed, physical extension."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://schema.org/Event"
+    "@id" : "https://schema.org/Event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Place"
@@ -577,7 +577,7 @@
     "@value" : "The most generic type of item."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://schema.org/Thing"
+    "@id" : "https://schema.org/Thing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -653,7 +653,7 @@
     "@id" : "http://schema.org/Event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://schema.org/location"
+    "@id" : "https://schema.org/location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "location"
@@ -727,8 +727,7 @@
     "@id" : "http://schema.org/Event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "https://schema.org/superEvent"
+    "@id" : "https://schema.org/superEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -839,7 +838,7 @@
     "@value" : "Referencia a la documentación asociada al evento."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipall"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipall"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -859,7 +858,7 @@
     "@value" : "Suceso programado para realizarse en una determinada fecha, hora, y lugar."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -894,7 +893,7 @@
     "@value" : "Role that the member of an event has as assistant, chair or organizer."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -924,7 +923,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -950,7 +949,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1002,7 +1001,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1031,8 +1030,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "es",
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1058,7 +1056,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1084,7 +1082,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1110,7 +1108,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1136,7 +1134,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1162,8 +1160,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "es",
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1189,7 +1186,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1215,7 +1212,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1240,7 +1237,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1266,7 +1263,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1291,7 +1288,7 @@
     "@id" : "http://www.w3.org/ns/org#Organization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Ámbito de Competencias"
@@ -1311,7 +1308,7 @@
     "@value" : "Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1358,8 +1355,7 @@
     "@value" : "Equipment to which a citizen can access belonging to an administration."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1396,7 +1392,7 @@
     "@value" : "2008-05-xx"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://www.w3.org/2008/05/skos"
+    "@id" : "http://www.w3.org/2008/05/skos"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1424,8 +1420,7 @@
     "@value" : "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://www.w3.org/2008/05/skos"
+    "@id" : "http://www.w3.org/2008/05/skos"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1445,8 +1440,7 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://www.w3.org/2004/02/skos/core"
+    "@id" : "http://www.w3.org/2004/02/skos/core"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1483,7 +1477,7 @@
     "@value" : "Pertenencia o afiliación de un agente a una organización. Es una relación n-aria entre un agente, una organización y una actividad. Es posible indicar pertenencia mediante el uso de la propiedad `org:memberOf`, independientemente de la actividad específica que se desempeñe."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://www.w3.org/ns/org"
+    "@id" : "http://www.w3.org/ns/org"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1538,7 +1532,7 @@
     "@value" : "Función que una persona o agente desempeña en el seno de una organización. Las instancias de esta clase describen la actividad en abstracto; si lo que se pretende es incluir una instancia que refleje la función o actividad que desempeña una persona en concreto en una organización específica, se indica el uso de instancias de la clase `org:Membership`. Es común que dichas actividades se representen en una estructura taxonómica mediante SKOS. Las propiedades léxicas de SKOS deberían utilizarse a la hora de denominar o etiquetar la actividad desempeñada. Para añadir propiedades descriptivas adicionales, como rango salarial, se tendrá que recurrir a vocabularios externos."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://www.w3.org/ns/org"
+    "@id" : "http://www.w3.org/ns/org"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -1773,8 +1767,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://xmlns.com/foaf/0.1/"
+    "@id" : "http://xmlns.com/foaf/0.1/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
