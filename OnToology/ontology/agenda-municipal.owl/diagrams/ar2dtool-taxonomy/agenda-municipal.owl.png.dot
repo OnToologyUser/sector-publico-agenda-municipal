@@ -1,23 +1,23 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "-43f647aa:16a9c07f8ad:-7fc7" "-43f647aa:16a9c07f8ad:-7fd8" "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##Evento" "esequip:Equipamiento" "-43f647aa:16a9c07f8ad:-7fd3" "dbo:GovernmentalAdministrativeRegion" "foaf:Agent" "-43f647aa:16a9c07f8ad:-7fe2" "-43f647aa:16a9c07f8ad:-7fcc" "dbo:District" "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##RolIntegranteEvento" "http://schema.org/Event" "foaf:Person" "esadm:Distrito" "-43f647aa:16a9c07f8ad:-7fdd" "dbo:Municipality" "-43f647aa:16a9c07f8ad:-7fc2" "foaf:Group" "skos:Concept" "esadm:Municipio" "http://www.w3.org/ns/org#Organization" "http://www.w3.org/ns/org#Role" "http://schema.org/Place" ; /*classes style*/
+node [shape = rectangle, color="black"]; "esequip:Equipamiento" "600c35e0:16ab1152686:-7fcc" "dbo:GovernmentalAdministrativeRegion" "foaf:Agent" "600c35e0:16ab1152686:-7fe2" "600c35e0:16ab1152686:-7fc7" "600c35e0:16ab1152686:-7fd8" "dbo:District" "600c35e0:16ab1152686:-7fdd" "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" "http://schema.org/Event" "foaf:Person" "esadm:Distrito" "600c35e0:16ab1152686:-7fc2" "600c35e0:16ab1152686:-7fd3" "dbo:Municipality" "foaf:Group" "skos:Concept" "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento" "esadm:Municipio" "http://www.w3.org/ns/org#Organization" "http://www.w3.org/ns/org#Role" "http://schema.org/Place" ; /*classes style*/
 	"foaf:Group" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
 	"http://www.w3.org/ns/org#Organization" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
 	"http://www.w3.org/ns/org#Role" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
 	"foaf:Person" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
-	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##Evento" -> "-43f647aa:16a9c07f8ad:-7fd3" [ label = "rdfs:subClassOf" ];
-	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##Evento" -> "-43f647aa:16a9c07f8ad:-7fd8" [ label = "rdfs:subClassOf" ];
-	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##Evento" -> "-43f647aa:16a9c07f8ad:-7fe2" [ label = "rdfs:subClassOf" ];
-	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##Evento" -> "-43f647aa:16a9c07f8ad:-7fdd" [ label = "rdfs:subClassOf" ];
-	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##Evento" -> "http://schema.org/Event" [ label = "rdfs:subClassOf" ];
 	"esadm:Distrito" -> "dbo:District" [ label = "rdfs:subClassOf" ];
 	"dbo:Municipality" -> "dbo:GovernmentalAdministrativeRegion" [ label = "rdfs:subClassOf" ];
 	"dbo:District" -> "dbo:GovernmentalAdministrativeRegion" [ label = "rdfs:subClassOf" ];
+	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" -> "http://schema.org/Event" [ label = "rdfs:subClassOf" ];
+	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" -> "600c35e0:16ab1152686:-7fd3" [ label = "rdfs:subClassOf" ];
+	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" -> "600c35e0:16ab1152686:-7fd8" [ label = "rdfs:subClassOf" ];
+	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" -> "600c35e0:16ab1152686:-7fdd" [ label = "rdfs:subClassOf" ];
+	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento" -> "600c35e0:16ab1152686:-7fe2" [ label = "rdfs:subClassOf" ];
 	"esequip:Equipamiento" -> "http://schema.org/Place" [ label = "rdfs:subClassOf" ];
-	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##RolIntegranteEvento" -> "-43f647aa:16a9c07f8ad:-7fc2" [ label = "rdfs:subClassOf" ];
-	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##RolIntegranteEvento" -> "-43f647aa:16a9c07f8ad:-7fc7" [ label = "rdfs:subClassOf" ];
-	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal##RolIntegranteEvento" -> "-43f647aa:16a9c07f8ad:-7fcc" [ label = "rdfs:subClassOf" ];
+	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento" -> "600c35e0:16ab1152686:-7fc2" [ label = "rdfs:subClassOf" ];
+	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento" -> "600c35e0:16ab1152686:-7fc7" [ label = "rdfs:subClassOf" ];
+	"http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento" -> "600c35e0:16ab1152686:-7fcc" [ label = "rdfs:subClassOf" ];
 	"esadm:Municipio" -> "dbo:Municipality" [ label = "rdfs:subClassOf" ];
 
 }
