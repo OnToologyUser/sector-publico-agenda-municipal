@@ -1,6 +1,64 @@
 <html>
 <h2 id="desc" class="list">Vocabulary for the representation of data on the events that take place within the municipal agenda and their participants: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">Figure 1 presents the classes and properties of the vocabulary for the representation of data on the events that take place within the municipal agenda and their participants</span></h2>
+<center><img src="resources/images/modeloConceptual.png"><figcaption>Figure 1. - Vocabulary for the representation of data on the events that take place within the municipal agenda and their participants<span class="backlink"> back to <a href="#toc">ToC</a></span></h2></figcaption>
+</center>
 <span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+The main concept of this vocabulary is [esagm:Event](#Evento) for which the classes [schema:Event](http://schema.org/Event) and [schema:Place](http://schema.org/Place) of the schema.org vocabulary are reused. A Place can be a municipal building or center [esequip:Equipamiento](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal) such as the town hall, a cultural center, etc. An event may have documentation [esagm:Documentacion](#Documentacion) such as the Agenda or the Minutes of the meeting. A member of an event can have the role [esagm:rol](#rol) of convener, holder or attendee. The events are composed by several [foaf:Agent](http://xmlns.com/foaf/0.1/Agent); it is worth mentioning that the set of agents includes people, organizations such as institutions or companies and groups. The positions of the participants in an event and its administrative units are represented through the classes [org:Role](https://www.w3.org/TR/vocab-org/#class-role), [org:Organization](https://www.w3.org/TR/vocab-org/#class-organization) and [org:Membership](https://www.w3.org/TR/vocab-org/#class-membership). An organization has an area of ​​competence that is a governmental administrative region represented by the class [dbo:GovernmentalAministrativeRegion](http://dbpedia.org/ontology/GovernmentalAdministrativeRegion) and it can be a district [esadm:Distrito](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito) or a municipality [esadm:Municipio](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio).
 
+Additionally, in this vocabulary several SKOS concept schemes have been used to represent the type of access, type of session, type of event or channel of an Event. In Figure 1 you can see several relationships with the SKOS concept class, however, the specific values ​​have not been specified because they are different depending on the taxonomy they represent. For example, the Session Type  property [tipoSesion](#tipoSesion) represents whether the session is Ordinary, Extraordinary or Extraordinary Urgent.</span>
+<h3>3.1 Examples of vocabulary use<span class="backlink">back<a href="#toc">index</a></span></h3>
+<span class="markdown">
+ In order to facilitate the understanding of some classes and properties of this vocabulary, some examples will be provided below.
+
+ First, for the representation of an event, an instance of the class [Evento](#Evento) (Event) is created with the properties [schema:name](http://schema.org/name) (title of the event), [schema:startDate](https://schema.org/startDate)  and [tipoEvento](#tipoEvento) according to the taxonomy of event types that has been defined, in the example the event belongs to the type internal meeting. A unique identifier of the event has been generated from the combination of its title and its start date and time.
+The event is associated through the property [schema:location](https://schema.org/schemaLocation) with an instance of [schema:Place](https://schema.org/Place) that corresponds to the place where the event takes place and it has a [schema:address](https://schema.org/address). The event has as [esagm:ambitoEvento](#ambitoEvento) the Madrid municipality that has been defined by the National Geographic Institute (ign) as the municipality-type resource with code 28079. In addition, an instance of the class [esagm:RolIntegranteEvento](#RolIntegranteEvento) is defined, that allows to relate the event to each holder or assistant, in this case information is provided about the holder of the event for which a unique identifier has been generated from their names and surnames.
+</span>
+<pre>
+&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/36c976301328a10566334e7e2c69c04c&gt; a esagm:Evento ;
+	schema:name "REUNIÓN CON AUXILIARES DE INFORMACIÓN, ATENCIÓN AL PÚBLICO Y CONTROL DE ENTRADAS EN EQUIPAMIENTOS ADSCRITOS AL DISTRITO DE VILLAVERDE."@es ;
+	schema:startDate "2018-04-12T17:30:00"^^xsd:dateTime ;
+	esagm:tipoEvento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-evento/reunion-interna&gt; .
+_:node1daboeatmx5 a schema:Place ;
+	schema:address "JUNTA MUNICIPAL DE VILLAVERDE. C/ ARROYO BUENO, 53"@es .
+&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/36c976301328a10566334e7e2c69c04c&gt; schema:location _:node1daboeatmx5 ;
+	esagm:ambitoEvento &lt;https://datos.ign.es/recurso/btn100/municipio/28079&gt; .
+_:node1daboeatmx6 a esagm:RolIntegranteEvento ;
+	esagm:evento &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/36c976301328a10566334e7e2c69c04c&gt; ;
+	esagm:rol &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante/titular&gt; ;
+	esagm:integra &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/persona/73bec760fc4bd4f37ce7a178d32f4f5f&gt; .
+</pre>
+<span class="markdown">
+ For each person that works at the city council, an instance of the class [org:Membership](https://www.w3.org/TR/vocab-org/#class-membership) is created, which relates the person to his/ her role and the administrative unit where he/she exercises office through the properties [org:role](https://www.w3.org/TR/vocab-org/#org:role), [org:member](https://www.w3.org/TR/vocab-org/#org:member) and [org:organization](https://www.w3.org/TR/vocab-org/#org:organization). In this case, the owner of the event described above is a Councilor of the Municipal Socialist Group of Madrid .
+</span>
+<pre>
+_:node1da8ree2jx81 a org:Membership ;
+	org:role &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/cargo/fa8ede20b126786e792be6c554834226&gt; ;
+	org:member &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/persona/73bec760fc4bd4f37ce7a178d32f4f5f&gt; ;
+	org:organization &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/organizacion/47537a424972964d9a1c8b0bc694053d&gt; .
+&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/persona/73bec760fc4bd4f37ce7a178d32f4f5f&gt; a foaf:Agent ;
+	foaf:name "Ignacio De Benito Pérez"@es .
+&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/cargo/fa8ede20b126786e792be6c554834226&gt; a org:Role ;
+	rdfs:label "Concejal"@es .
+&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/organizacion/47537a424972964d9a1c8b0bc694053d&gt; a org:Organization ;
+	foaf:name "GRUPO MUNICIPAL SOCIALISTA DE MADRID"@es ;
+	orges:ambitoCompetencias &lt;https://datos.ign.es/recurso/btn100/municipio/28079&gt; .
+</pre>
+
+<span class="markdown">
+	In the following example there is an Ordinary District Board held in the municipality of Zaragoza. For this event an instance of the class [Documentacion](#Documentacion) has been created with a [nombreDoc](#nombreDoc) (agenda) and a uri [uriDoc](#urlDoc), in this case the documentation is public [publico](#publico).
+</span>
+<pre>
+&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/fc61b132f300dc0ec7138371e633b8be&gt; a esagm:Evento ;
+	schema:name "Sesión ordinaria del Pleno de la Junta Vecinal Monzalbarba"@es ;
+	schema:startDate "2019-04-16T19:00:00"^^xsd:dateTime ;
+	esagm:tipoEvento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-evento/junta-de-distrito&gt; .
+&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/agenda-municipal/evento/fc61b132f300dc0ec7138371e633b8be>&gt; esagm:documentacion _:node1daboeatmx99 ;
+	esagm:ambitoEvento &lt;https://datos.ign.es/recurso/btn100/municipio/50297&gt; ;
+	esagm:tipoSesion &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-sesion/ordinaria&gt; .
+_:node1daboeatmx99 a &lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/agenda-municipal/Documentacion&gt; ;
+	esagm:nombreDoc "Orden del día"@es ;
+	esagm:uriDoc &lt;http://www.zaragoza.es/pubFehacientev2/servlet/PubFehacienteServlet?ID=73762&gt; ;
+	esagm:publico "true"^^xsd:boolean .
+</pre>
 </html>
