@@ -11,8 +11,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix esagm: <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#> .
 @prefix orges: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> .
-@prefix skos1: <http://www.w3.org/2008/05/skos#> .
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix schema: <https://schema.org/> .
 @prefix esequip: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> .
@@ -23,11 +23,13 @@
                                                                         dc:contributor "Red.es"@es ;
                                                                         terms:creator "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"^^xsd:string ;
                                                                         terms:hasFormat "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal.owl"@es ;
+                                                                        esagm:preferredNamespacePrefix "esagm" ;
                                                                         dc:title "Vocabulary for the representation of data on the events that take place within the municipal agenda and their participants"@en ;
                                                                         dc:contributor "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"@es ;
                                                                         terms:license "https://creativecommons.org/licenses/by/4.0"^^xsd:string ;
                                                                         dc:contributor "Servicio de Informática - Ayuntamiento de Santiago de Compostela"@es ;
                                                                         dc:title "Vocabulario para la representación de datos sobre los eventos que se realizan dentro de la agenda municipal y sus asistentes, convocantes y titulares"@es ;
+                                                                        owl:versionInfo "Esta es la versión inicial de la ontología de Agenda Municipal que ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña." ;
                                                                         terms:issued "2019-03-22"@es ;
                                                                         dc:creator "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)"^^xsd:string ;
                                                                         dc:contributor "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es ,
@@ -38,6 +40,7 @@
 En esta versión se han clases y propiedades de acuerdo a los requisitos y glosario de conceptos propuestos en la reuni'on del 22/03/2019"""@es ;
                                                                         dc:contributor "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es ;
                                                                         dc:creator "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)"^^xsd:string ;
+                                                                        esagm:preferredNamespaceUri "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#" ;
                                                                         dc:contributor "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
                                                                                        "Víctor Morlán Plo - Ayuntamiento de Zaragoza"@es ;
                                                                         dc:rights "Creative Commons Attribution 4.0 International (CC BY 4.0)"^^xsd:string .
@@ -165,6 +168,14 @@ terms:title rdf:type owl:AnnotationProperty ;
             rdfs:subPropertyOf dc:title .
 
 
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespacePrefix
+esagm:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespaceUri
+esagm:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
 ns:term_status rdf:type owl:AnnotationProperty .
 
@@ -186,7 +197,7 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2008/05/skos#definition
-skos1:definition rdf:type owl:AnnotationProperty .
+<http://www.w3.org/2008/05/skos#definition> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -229,149 +240,149 @@ skos1:definition rdf:type owl:AnnotationProperty .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#ambitoEvento
-:ambitoEvento rdf:type owl:ObjectProperty ;
-              rdfs:domain :Evento ;
-              rdfs:range dbo:GovernmentalAdministrativeRegion ;
-              rdfs:comment "Territorial scope of an event."@en ,
-                           "Ámbito territorial de un evento."@es ;
-              rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-              rdfs:label "territorial scope"@en ,
-                         "ámbito territorial"@es .
+esagm:ambitoEvento rdf:type owl:ObjectProperty ;
+                   rdfs:domain esagm:Evento ;
+                   rdfs:range dbo:GovernmentalAdministrativeRegion ;
+                   rdfs:comment "Territorial scope of an event."@en ,
+                                "Ámbito territorial de un evento."@es ;
+                   rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+                   rdfs:label "territorial scope"@en ,
+                              "ámbito territorial"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#canal
-:canal rdf:type owl:ObjectProperty ;
-       rdfs:domain :Evento ;
-       rdfs:range [ owl:intersectionOf ( skos:Concept
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty skos:inScheme ;
-                                           owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/canal>
-                                         ]
-                                       ) ;
-                    rdf:type owl:Class
-                  ] ;
-       rdfs:comment "Means for the realization of the event: face-to-face or online."@en ,
-                    "Medio de realización del evento: presencial o en línea."@es ;
-       rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-       rdfs:label "canal"@es ,
-                  "channel"@en .
+esagm:canal rdf:type owl:ObjectProperty ;
+            rdfs:domain esagm:Evento ;
+            rdfs:range [ owl:intersectionOf ( skos:Concept
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty skos:inScheme ;
+                                                owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/canal>
+                                              ]
+                                            ) ;
+                         rdf:type owl:Class
+                       ] ;
+            rdfs:comment "Means for the realization of the event: face-to-face or online."@en ,
+                         "Medio de realización del evento: presencial o en línea."@es ;
+            rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+            rdfs:label "canal"@es ,
+                       "channel"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#documentacion
-:documentacion rdf:type owl:ObjectProperty ;
-               rdfs:domain :Evento ;
-               rdfs:range :Documentacion ;
-               rdfs:comment "Asociación con la documentación como actas, mociones, vídeos."@es ,
-                            "Association with documentation such as minutes, motions, videos."@en ;
-               rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
-               rdfs:label "asociado con"@es ,
-                          "associated with"@en .
+esagm:documentacion rdf:type owl:ObjectProperty ;
+                    rdfs:domain esagm:Evento ;
+                    rdfs:range esagm:Documentacion ;
+                    rdfs:comment "Asociación con la documentación como actas, mociones, vídeos."@es ,
+                                 "Association with documentation such as minutes, motions, videos."@en ;
+                    rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+                    rdfs:label "asociado con"@es ,
+                               "associated with"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#evento
-:evento rdf:type owl:ObjectProperty ;
-        owl:inverseOf :rolIntegrante ;
-        rdfs:domain :RolIntegranteEvento ;
-        rdfs:range :Evento ;
-        rdfs:comment "Event in which a member participates with a role."@en ,
-                     "Evento en el que participa un integrante con un rol."@es ;
-        rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-        rdfs:label "event"@es ,
-                   "evento"@en .
+esagm:evento rdf:type owl:ObjectProperty ;
+             owl:inverseOf esagm:rolIntegrante ;
+             rdfs:domain esagm:RolIntegranteEvento ;
+             rdfs:range esagm:Evento ;
+             rdfs:comment "Event in which a member participates with a role."@en ,
+                          "Evento en el que participa un integrante con un rol."@es ;
+             rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+             rdfs:label "event"@es ,
+                        "evento"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#integra
-:integra rdf:type owl:ObjectProperty ;
-         rdfs:domain :RolIntegranteEvento ;
-         rdfs:range foaf:Agent ;
-         rdfs:comment "El integrante de un evento con un cierto rol."@es ,
-                      "The member of an event with a certain role."@en ;
-         rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-         rdfs:label "integra"@es ,
-                    "integrates"@en .
+esagm:integra rdf:type owl:ObjectProperty ;
+              rdfs:domain esagm:RolIntegranteEvento ;
+              rdfs:range foaf:Agent ;
+              rdfs:comment "El integrante de un evento con un cierto rol."@es ,
+                           "The member of an event with a certain role."@en ;
+              rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+              rdfs:label "integra"@es ,
+                         "integrates"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rol
-:rol rdf:type owl:ObjectProperty ;
-     rdfs:domain :RolIntegranteEvento ;
-     rdfs:range [ owl:intersectionOf ( skos:Concept
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty skos:inScheme ;
-                                         owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol>
-                                       ]
-                                     ) ;
-                  rdf:type owl:Class
-                ] ;
-     rdfs:comment "El rol que puede tener un integrante de un evento."@es ,
-                  "The role of a member of an event."@en ;
-     rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-     rdfs:label "rol en evento"@es ,
-                "role in event"@en .
+esagm:rol rdf:type owl:ObjectProperty ;
+          rdfs:domain esagm:RolIntegranteEvento ;
+          rdfs:range [ owl:intersectionOf ( skos:Concept
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty skos:inScheme ;
+                                              owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante>
+                                            ]
+                                          ) ;
+                       rdf:type owl:Class
+                     ] ;
+          rdfs:comment "El rol que puede tener un integrante de un evento."@es ,
+                       "The role of a member of an event."@en ;
+          rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+          rdfs:label "rol en evento"@es ,
+                     "role in event"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rolIntegrante
-:rolIntegrante rdf:type owl:ObjectProperty ;
-               rdfs:domain :Evento ;
-               rdfs:range :RolIntegranteEvento ;
-               rdfs:comment "Rol del integrante de un evento."@es ,
-                            "Role of a  member of an event."@en ;
-               rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-               rdfs:label "member role"@en ,
-                          "rol Integrante"@es .
+esagm:rolIntegrante rdf:type owl:ObjectProperty ;
+                    rdfs:domain esagm:Evento ;
+                    rdfs:range esagm:RolIntegranteEvento ;
+                    rdfs:comment "Rol del integrante de un evento."@es ,
+                                 "Role of a  member of an event."@en ;
+                    rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+                    rdfs:label "member role"@en ,
+                               "rol Integrante"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoAcceso
-:tipoAcceso rdf:type owl:ObjectProperty ;
-            rdfs:domain :Evento ;
-            rdfs:range [ owl:intersectionOf ( skos:Concept
-                                              [ rdf:type owl:Restriction ;
-                                                owl:onProperty skos:inScheme ;
-                                                owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-acceso>
-                                              ]
-                                            ) ;
-                         rdf:type owl:Class
-                       ] ;
-            rdfs:comment "Tipo de asistencia al evento: público, privado o restringido."@es ,
-                         "Type of event attendance: public, private or restricted."@en ;
-            rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-            rdfs:label "attendance type"@en ,
-                       "tipo de acceso"@es .
+esagm:tipoAcceso rdf:type owl:ObjectProperty ;
+                 rdfs:domain esagm:Evento ;
+                 rdfs:range [ owl:intersectionOf ( skos:Concept
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty skos:inScheme ;
+                                                     owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-acceso>
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+                 rdfs:comment "Tipo de asistencia al evento: público, privado o restringido."@es ,
+                              "Type of event attendance: public, private or restricted."@en ;
+                 rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+                 rdfs:label "attendance type"@en ,
+                            "tipo de acceso"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoEvento
-:tipoEvento rdf:type owl:ObjectProperty ;
-            rdfs:domain :Evento ;
-            rdfs:range [ owl:intersectionOf ( skos:Concept
-                                              [ rdf:type owl:Restriction ;
-                                                owl:onProperty skos:inScheme ;
-                                                owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-evento>
-                                              ]
-                                            ) ;
-                         rdf:type owl:Class
-                       ] ;
-            rdfs:comment "Tipología que define a qué categoría pertenece el evento. Los tipos de evento se representan mediante una lista de conceptos."@es ,
-                         "Typology that defines to what category the event belongs. Event types are represented by a list of concepts."@en ;
-            rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-            rdfs:label "event type"@es ,
-                       "tipo de evento" .
+esagm:tipoEvento rdf:type owl:ObjectProperty ;
+                 rdfs:domain esagm:Evento ;
+                 rdfs:range [ owl:intersectionOf ( skos:Concept
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty skos:inScheme ;
+                                                     owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-evento>
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+                 rdfs:comment "Tipología que define a qué categoría pertenece el evento. Los tipos de evento se representan mediante una lista de conceptos."@es ,
+                              "Typology that defines to what category the event belongs. Event types are represented by a list of concepts."@en ;
+                 rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+                 rdfs:label "event type"@es ,
+                            "tipo de evento" .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoSesion
-:tipoSesion rdf:type owl:ObjectProperty ;
-            rdfs:domain :Evento ;
-            rdfs:range [ owl:intersectionOf ( skos:Concept
-                                              [ rdf:type owl:Restriction ;
-                                                owl:onProperty skos:inScheme ;
-                                                owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-sesion>
-                                              ]
-                                            ) ;
-                         rdf:type owl:Class
-                       ] ;
-            rdfs:comment "For the events of collegiate bodies, the type id session defines if the session is ordinary, extraordinary or extraordinary urgent"@en ,
-                         "Para los eventos de órganos colegiados, tipo de sesión puede ser ordinaria, extraordinaria o extraordinaria urgente"@es ;
-            rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-            rdfs:label "session type"@en ,
-                       "tipo de sesion"@es .
+esagm:tipoSesion rdf:type owl:ObjectProperty ;
+                 rdfs:domain esagm:Evento ;
+                 rdfs:range [ owl:intersectionOf ( skos:Concept
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty skos:inScheme ;
+                                                     owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-sesion>
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+                 rdfs:comment "For the events of collegiate bodies, the type id session defines if the session is ordinary, extraordinary or extraordinary urgent"@en ,
+                              "Para los eventos de órganos colegiados, tipo de sesión puede ser ordinaria, extraordinaria o extraordinaria urgente"@es ;
+                 rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+                 rdfs:label "session type"@en ,
+                            "tipo de sesión"@es .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#ambitoCompetencias
@@ -514,60 +525,60 @@ skos:inScheme rdf:type owl:ObjectProperty ;
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#formato
-:formato rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Documentacion ;
-         rdfs:range [ rdf:type rdfs:Datatype ;
-                      owl:oneOf [ rdf:type rdf:List ;
-                                  rdf:first "imagen" ;
-                                  rdf:rest [ rdf:type rdf:List ;
-                                             rdf:first "texto" ;
-                                             rdf:rest [ rdf:type rdf:List ;
-                                                        rdf:first "video" ;
-                                                        rdf:rest rdf:nil
-                                                      ]
-                                           ]
-                                ]
-                    ] ;
-         rdfs:comment "Format of the document: image, video, text."@en ,
-                      "Formato del documento: imagen, video, texto."@es ;
-         rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-         rdfs:label "format"@en ,
-                    "formato"@es .
+esagm:formato rdf:type owl:DatatypeProperty ;
+              rdfs:domain esagm:Documentacion ;
+              rdfs:range [ rdf:type rdfs:Datatype ;
+                           owl:oneOf [ rdf:type rdf:List ;
+                                       rdf:first "imagen" ;
+                                       rdf:rest [ rdf:type rdf:List ;
+                                                  rdf:first "texto" ;
+                                                  rdf:rest [ rdf:type rdf:List ;
+                                                             rdf:first "video" ;
+                                                             rdf:rest rdf:nil
+                                                           ]
+                                                ]
+                                     ]
+                         ] ;
+              rdfs:comment "Format of the document: image, video, text."@en ,
+                           "Formato del documento: imagen, video, texto."@es ;
+              rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+              rdfs:label "format"@en ,
+                         "formato"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#nombreDoc
-:nombreDoc rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Documentacion ;
-           rdfs:range xsd:string ;
-           rdfs:comment "Name of the documentation such as minutes of meeting, motion, etc."@en ,
-                        "Nombre de la documentación tal como acta de reunión, moción, etc."@es ;
-           rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-           rdfs:label "documentation name"@en ,
-                      "nombre documentación"@es .
+esagm:nombreDoc rdf:type owl:DatatypeProperty ;
+                rdfs:domain esagm:Documentacion ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Name of the documentation such as minutes of meeting, motion, etc."@en ,
+                             "Nombre de la documentación tal como acta de reunión, moción, etc."@es ;
+                rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+                rdfs:label "documentation name"@en ,
+                           "nombre documentación"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#publico
-:publico rdf:type owl:DatatypeProperty ,
-                  owl:FunctionalProperty ;
-         rdfs:domain :Documentacion ;
-         rdfs:range xsd:boolean ;
-         rdfs:comment "Si la documentación es de acceso público o no (privado)."@es ,
-                      "Whether the documentation is public access or not (private)."@en ;
-         rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-         rdfs:label "public"@en ,
-                    "público"@es .
+esagm:publico rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain esagm:Documentacion ;
+              rdfs:range xsd:boolean ;
+              rdfs:comment "Si la documentación es de acceso público o no (privado)."@es ,
+                           "Whether the documentation is public access or not (private)."@en ;
+              rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+              rdfs:label "public"@en ,
+                         "público"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#uriDoc
-:uriDoc rdf:type owl:DatatypeProperty ,
-                 owl:FunctionalProperty ;
-        rdfs:domain :Documentacion ;
-        rdfs:range xsd:anyURI ;
-        rdfs:comment "URI donde se encuentra la documentación."@es ,
-                     "URI where the documentation is located."@en ;
-        rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-        rdfs:label "uri documentación"@es ,
-                   "uri documentation"@en .
+esagm:uriDoc rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain esagm:Documentacion ;
+             rdfs:range xsd:anyURI ;
+             rdfs:comment "URI donde se encuentra la documentación."@es ,
+                          "URI where the documentation is located."@en ;
+             rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+             rdfs:label "uri documentación"@es ,
+                        "uri documentation"@en .
 
 
 ###  http://xmlns.com/foaf/0.1/name
@@ -632,123 +643,123 @@ dbo:Municipality rdf:type owl:Class ;
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion
-:Documentacion rdf:type owl:Class ;
-               rdfs:comment "Reference to the documentation associated with the event."@en ,
-                            "Referencia a la documentación asociada al evento."@es ;
-               rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-               rdfs:label "Documentación"@es ,
-                          "Documentation"@en .
+esagm:Documentacion rdf:type owl:Class ;
+                    rdfs:comment "Reference to the documentation associated with the event."@en ,
+                                 "Referencia a la documentación asociada al evento."@es ;
+                    rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+                    rdfs:label "Documentación"@es ,
+                               "Documentation"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento
-:Evento rdf:type owl:Class ;
-        rdfs:subClassOf <http://schema.org/Event> ,
-                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :canal ;
-                                                 owl:allValuesFrom skos:Concept
-                                               ]
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :canal ;
-                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                 owl:onClass skos:Concept
-                                               ]
-                                             ) ;
-                          rdf:type owl:Class
-                        ] ,
-                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :rolIntegrante ;
-                                                 owl:allValuesFrom :RolIntegranteEvento
-                                               ]
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :rolIntegrante ;
-                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                 owl:onClass :RolIntegranteEvento
-                                               ]
-                                             ) ;
-                          rdf:type owl:Class
-                        ] ,
-                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :tipoAcceso ;
-                                                 owl:allValuesFrom skos:Concept
-                                               ]
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :tipoAcceso ;
-                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                 owl:onClass skos:Concept
-                                               ]
-                                             ) ;
-                          rdf:type owl:Class
-                        ] ,
-                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :tipoSesion ;
-                                                 owl:allValuesFrom skos:Concept
-                                               ]
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :tipoSesion ;
-                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                 owl:onClass skos:Concept
-                                               ]
-                                             ) ;
-                          rdf:type owl:Class
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :documentacion ;
-                          owl:allValuesFrom :Documentacion
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :tipoEvento ;
-                          owl:allValuesFrom skos:Concept
-                        ] ;
-        rdfs:comment "Action scheduled to take place at a certain date, time and place."@en ,
-                     "Suceso programado para realizarse en una determinada fecha, hora, y lugar."@es ;
-        rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-        rdfs:label "Event in agenda"@en ,
-                   "Evento en agenda"@es .
+esagm:Evento rdf:type owl:Class ;
+             rdfs:subClassOf <http://schema.org/Event> ,
+                             [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                      owl:onProperty esagm:canal ;
+                                                      owl:allValuesFrom skos:Concept
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty esagm:canal ;
+                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                      owl:onClass skos:Concept
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ,
+                             [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                      owl:onProperty esagm:rolIntegrante ;
+                                                      owl:allValuesFrom esagm:RolIntegranteEvento
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty esagm:rolIntegrante ;
+                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                      owl:onClass esagm:RolIntegranteEvento
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ,
+                             [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                      owl:onProperty esagm:tipoAcceso ;
+                                                      owl:allValuesFrom skos:Concept
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty esagm:tipoAcceso ;
+                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                      owl:onClass skos:Concept
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ,
+                             [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                      owl:onProperty esagm:tipoSesion ;
+                                                      owl:allValuesFrom skos:Concept
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty esagm:tipoSesion ;
+                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                      owl:onClass skos:Concept
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty esagm:documentacion ;
+                               owl:allValuesFrom esagm:Documentacion
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty esagm:tipoEvento ;
+                               owl:allValuesFrom skos:Concept
+                             ] ;
+             rdfs:comment "Action scheduled to take place at a certain date, time and place."@en ,
+                          "Suceso programado para realizarse en una determinada fecha, hora, y lugar."@es ;
+             rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+             rdfs:label "Event in agenda"@en ,
+                        "Evento en agenda"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento
-:RolIntegranteEvento rdf:type owl:Class ;
-                     rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                              owl:onProperty :evento ;
-                                                              owl:allValuesFrom :Evento
-                                                            ]
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty :evento ;
-                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                              owl:onClass :Evento
-                                                            ]
-                                                          ) ;
-                                       rdf:type owl:Class
-                                     ] ,
-                                     [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                              owl:onProperty :integra ;
-                                                              owl:allValuesFrom foaf:Agent
-                                                            ]
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty :integra ;
-                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                              owl:onClass foaf:Agent
-                                                            ]
-                                                          ) ;
-                                       rdf:type owl:Class
-                                     ] ,
-                                     [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                              owl:onProperty :rol ;
-                                                              owl:allValuesFrom skos:Concept
-                                                            ]
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty :rol ;
-                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                              owl:onClass skos:Concept
-                                                            ]
-                                                          ) ;
-                                       rdf:type owl:Class
-                                     ] ;
-                     rdfs:comment "Rol que tiene el integrante de un evento como asistente, convocante o titular."@es ,
-                                  "Role that the member of an event has as assistant, chair or organizer."@en ;
-                     rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-                     rdfs:label "Rol integrante del evento"@es ,
-                                "Role member of event"@en .
+esagm:RolIntegranteEvento rdf:type owl:Class ;
+                          rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty esagm:evento ;
+                                                                   owl:allValuesFrom esagm:Evento
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty esagm:evento ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass esagm:Evento
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ,
+                                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty esagm:integra ;
+                                                                   owl:allValuesFrom foaf:Agent
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty esagm:integra ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass foaf:Agent
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ,
+                                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty esagm:rol ;
+                                                                   owl:allValuesFrom skos:Concept
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty esagm:rol ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass skos:Concept
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                          rdfs:comment "Rol que tiene el integrante de un evento como asistente, convocante o titular."@es ,
+                                       "Role that the member of an event has as assistant, chair or organizer."@en ;
+                          rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
+                          rdfs:label "Rol integrante del evento"@es ,
+                                     "Role member of event"@en .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito
@@ -799,7 +810,7 @@ skos:ConceptScheme rdf:type owl:Class ;
                                 "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies."@en ;
                    rdfs:isDefinedBy <http://www.w3.org/2008/05/skos> ;
                    rdfs:label "Concept Scheme"@en ;
-                   skos1:definition "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
+                   <http://www.w3.org/2008/05/skos#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
 
 
 ###  http://www.w3.org/ns/org#Membership
@@ -868,9 +879,9 @@ foaf:Person rdf:type owl:Class ;
                                                                                               skos:ConceptScheme .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol
-<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol> rdf:type owl:NamedIndividual ,
-                                                                                            skos:ConceptScheme .
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante> rdf:type owl:NamedIndividual ,
+                                                                                                       skos:ConceptScheme .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-acceso
