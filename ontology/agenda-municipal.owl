@@ -39,8 +39,8 @@
                                                                         rdfs:comment """sta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   
 En esta versión se han clases y propiedades de acuerdo a los requisitos y glosario de conceptos propuestos en la reuni'on del 22/03/2019"""@es ;
                                                                         dc:contributor "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es ;
-                                                                        dc:creator "Edna Ruckhaus Magnus (Ontology Engineering Group - Universidad Politécnica de Madrid)"^^xsd:string ;
                                                                         esagm:preferredNamespaceUri "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#" ;
+                                                                        dc:creator "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)"^^xsd:string ;
                                                                         dc:contributor "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
                                                                                        "Víctor Morlán Plo - Ayuntamiento de Zaragoza"@es ;
                                                                         dc:rights "Creative Commons Attribution 4.0 International (CC BY 4.0)"^^xsd:string .
@@ -567,6 +567,17 @@ esagm:publico rdf:type owl:DatatypeProperty ,
               rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
               rdfs:label "public"@en ,
                          "público"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby
+esagm:reunionLobby rdf:type owl:DatatypeProperty ;
+                   rdfs:domain esagm:Evento ;
+                   rdfs:range xsd:boolean ;
+                   rdfs:comment "Meetings where a physical person, legal entity and other entities that intends to influence the regulations and municipal policies and decisions of general impact, do so through meetings with councilors, directors and temporal municipal staff."@en ,
+                                "Reuniones con carácter de lobby en donde una persona física, jurídica y entidades sin personalidad que pretenda influir en la normativa y en las políticas municipales y en las decisiones de impacto general, lo hacen a través de encuentros con concejales, directivos y personal eventual municipal."@es ;
+                   rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"@en ;
+                   rdfs:label "Lobby meeting"@en ,
+                              "reunión Lobby"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#uriDoc
