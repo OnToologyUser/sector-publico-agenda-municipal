@@ -17,6 +17,9 @@
       "@id" : "http://www.w3.org/ns/org#member",
       "@type" : "@id"
     },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
     "example" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#example"
     },
@@ -62,6 +65,10 @@
     },
     "hasVersion" : {
       "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
+    "reunionLobby" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "label" : {
       "@id" : "rdfs:label",
@@ -137,6 +144,9 @@
     },
     "identifier" : {
       "@id" : "http://purl.org/dc/elements/1.1/identifier"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespacePrefix"
     },
     "Place" : {
       "@id" : "http://schema.org/Place"
@@ -253,6 +263,9 @@
     "nombreDoc" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#nombreDoc",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespaceUri"
     },
     "relation" : {
       "@id" : "http://purl.org/dc/elements/1.1/relation"

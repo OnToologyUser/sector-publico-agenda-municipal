@@ -27,8 +27,11 @@
                                                                         <http://purl.org/dc/terms/hasFormat> "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal.owl"@es ;
                                                                         <http://purl.org/dc/terms/issued> "2019-03-22"@es ;
                                                                         <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
+                                                                        :preferredNamespacePrefix "esagm" ;
+                                                                        :preferredNamespaceUri "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#" ;
                                                                         rdfs:comment """sta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   
-En esta versión se han clases y propiedades de acuerdo a los requisitos y glosario de conceptos propuestos en la reuni'on del 22/03/2019"""@es .
+En esta versión se han clases y propiedades de acuerdo a los requisitos y glosario de conceptos propuestos en la reuni'on del 22/03/2019"""@es ;
+                                                                        owl:versionInfo "Esta es la versión inicial de la ontología de Agenda Municipal que ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña." .
 
 #################################################################
 #    Annotation properties
@@ -142,6 +145,14 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
 ###  http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty ;
                                  rdfs:subPropertyOf <http://purl.org/dc/elements/1.1/title> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespacePrefix
+:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespaceUri
+:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
@@ -276,7 +287,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
      rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                        [ rdf:type owl:Restriction ;
                                          owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                         owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol>
+                                         owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante>
                                        ]
                                      ) ;
                   rdf:type owl:Class
@@ -350,7 +361,7 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
                          "Para los eventos de órganos colegiados, tipo de sesión puede ser ordinaria, extraordinaria o extraordinaria urgente"@es ;
             rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
             rdfs:label "session type"@en ,
-                       "tipo de sesion"@es .
+                       "tipo de sesión"@es .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#ambitoCompetencias
@@ -535,6 +546,17 @@ En esta versión se han clases y propiedades de acuerdo a los requisitos y glosa
          rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
          rdfs:label "public"@en ,
                     "público"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby
+:reunionLobby rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Evento ;
+              rdfs:range xsd:boolean ;
+              rdfs:comment "Meetings where a physical person, legal entity and other entities that intends to influence the regulations and municipal policies and decisions of general impact, do so through meetings with councilors, directors and temporal municipal staff."@en ,
+                           "Reuniones con carácter de lobby en donde una persona física, jurídica y entidades sin personalidad que pretenda influir en la normativa y en las políticas municipales y en las decisiones de impacto general, lo hacen a través de encuentros con concejales, directivos y personal eventual municipal."@es ;
+              rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"@en ;
+              rdfs:label "Lobby meeting"@en ,
+                         "reunión Lobby"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#uriDoc
@@ -847,9 +869,9 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
                                                                                               <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol
-<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol> rdf:type owl:NamedIndividual ,
-                                                                                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante> rdf:type owl:NamedIndividual ,
+                                                                                                       <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-acceso

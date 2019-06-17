@@ -332,7 +332,7 @@
   "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -820,12 +820,21 @@
   "http://purl.org/dc/terms/license" : [ {
     "@value" : "https://creativecommons.org/licenses/by/4.0"
   } ],
+  "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespacePrefix" : [ {
+    "@value" : "esagm"
+  } ],
+  "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespaceUri" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : "sta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   \nEn esta versión se han clases y propiedades de acuerdo a los requisitos y glosario de conceptos propuestos en la reuni'on del 22/03/2019"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "Esta es la versión inicial de la ontología de Agenda Municipal que ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña."
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion",
@@ -1095,6 +1104,12 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#publico",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1116,6 +1131,33 @@
   }, {
     "@language" : "es",
     "@value" : "público"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Meetings where a physical person, legal entity and other entities that intends to influence the regulations and municipal policies and decisions of general impact, do so through meetings with councilors, directors and temporal municipal staff."
+  }, {
+    "@language" : "es",
+    "@value" : "Reuniones con carácter de lobby en donde una persona física, jurídica y entidades sin personalidad que pretenda influir en la normativa y en las políticas municipales y en las decisiones de impacto general, lo hacen a través de encuentros con concejales, directivos y personal eventual municipal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lobby meeting"
+  }, {
+    "@language" : "es",
+    "@value" : "reunión Lobby"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -1244,7 +1286,7 @@
     "@value" : "session type"
   }, {
     "@language" : "es",
-    "@value" : "tipo de sesion"
+    "@value" : "tipo de sesión"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid17"
@@ -1371,7 +1413,7 @@
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/canal",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol",
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-acceso",

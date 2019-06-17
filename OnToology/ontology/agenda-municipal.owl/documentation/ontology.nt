@@ -19,7 +19,10 @@
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> <http://purl.org/dc/terms/hasFormat> "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal.owl"@es .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> <http://purl.org/dc/terms/issued> "2019-03-22"@es .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespacePrefix> "esagm" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespaceUri> "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#" .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> <http://www.w3.org/2000/01/rdf-schema#comment> "sta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   \nEn esta versión se han clases y propiedades de acuerdo a los requisitos y glosario de conceptos propuestos en la reuni'on del 22/03/2019"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> <http://www.w3.org/2002/07/owl#versionInfo> "Esta es la versión inicial de la ontología de Agenda Municipal que ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña." .
 # 
 # 
 # #################################################################
@@ -114,6 +117,12 @@
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/title> .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespacePrefix
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespaceUri
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -247,7 +256,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol> .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rol> <http://www.w3.org/2000/01/rdf-schema#comment> "El rol que puede tener un integrante de un evento."@es .
@@ -327,7 +336,7 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoSesion> <http://www.w3.org/2000/01/rdf-schema#comment> "Para los eventos de órganos colegiados, tipo de sesión puede ser ordinaria, extraordinaria o extraordinaria urgente"@es .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoSesion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoSesion> <http://www.w3.org/2000/01/rdf-schema#label> "session type"@en .
-<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoSesion> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de sesion"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoSesion> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de sesión"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#ambitoCompetencias
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#ambitoCompetencias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -502,6 +511,16 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#publico> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#publico> <http://www.w3.org/2000/01/rdf-schema#label> "public"@en .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#publico> <http://www.w3.org/2000/01/rdf-schema#label> "público"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby> <http://www.w3.org/2000/01/rdf-schema#comment> "Meetings where a physical person, legal entity and other entities that intends to influence the regulations and municipal policies and decisions of general impact, do so through meetings with councilors, directors and temporal municipal staff."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby> <http://www.w3.org/2000/01/rdf-schema#comment> "Reuniones con carácter de lobby en donde una persona física, jurídica y entidades sin personalidad que pretenda influir en la normativa y en las políticas municipales y en las decisiones de impacto general, lo hacen a través de encuentros con concejales, directivos y personal eventual municipal."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby> <http://www.w3.org/2000/01/rdf-schema#label> "Lobby meeting"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby> <http://www.w3.org/2000/01/rdf-schema#label> "reunión Lobby"@es .
 # 
 # http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#uriDoc
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#uriDoc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -826,9 +845,9 @@ _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/canal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/canal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
-# http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol
-<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
 # http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-acceso
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-acceso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
